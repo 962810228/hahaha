@@ -1,0 +1,52 @@
+body,html{height: 100%;width: 100%}
+#bigbox{width: 100%;height: 100%;background: #F6F6F6;margin: 0 auto}
+#bigbox .container{width: 984px;}
+
+#bigbox #head{background-color: #F6F6F6;}
+#bigbox #head .head_1{padding: 18px 0}
+#bigbox #head .head_1 a{display: block;float: left}
+#bigbox #head .head_1 a img{display: block;width: 120px;height: 60px;}
+#bigbox #head .head_1 span{font-size: 22px;line-height: 36px;margin: 23px 39px;padding-left: 39px;
+    border-left: 1px solid #ccc;color: #CC3A1E;}
+
+.fmain{background: white;border: 6px solid #ccc;box-sizing: border-box}
+#main .top{width: 100%;}
+#main .tab{}
+#main .tab ul li{float: left;}
+#main .tab ul li span{display: block;font-size: 16px;line-height: 41px;
+       padding: 10px;cursor: pointer}
+
+#main .finish{line-height: 41px;height: 41px;}
+#main .finish a{width: 25px;height: 25px;background: green;color: white;font-size: 12px;}
+
+#main .msg{width: 100%;}
+#main .msg .reg_1{display: none;}
+#main .msg .reg_2{display: none;}
+/*.selected{display: none;}*/
+#main .msg .reg_2 label:not(.fcheckbox){display: inline-block;width:106px;text-align: right;
+                line-height: 30px;height: 30px;color: #999999; margin-top: 20px;}
+#main .msg .reg_2 input{line-height: 30px;font-size: 12px;height: 30px;
+                width: 242px;color: black;}
+#main .msg .reg_2>button{width: 160px;height: 40px;text-align: center;border: none;border-radius: 5px;
+            line-height: 40px;background: #C80F1E;margin: 20px 0 20px 117px}
+#main .msg .reg_2 .fcheckbox{display: inline-block;width: 300px;
+            margin-left: 117px;margin-top: 20px;}
+#main .msg .reg_2 .checkbox{width: 10px;height: 16px;}
+#main .msg .reg_2 span{text-align: left;color: #999999;line-height: 30px;
+            font-size: 12px;height: 30px;}
+#main .msg .reg_2 .xx{color: red;}
+#main .msg .reg_2 .huoqu{display: inline-block;width: 100px;height: 40px;
+    background: #ccc;text-align: center}
+
+
+
+
+#bigbox #footer .dv3{text-align: center;padding-top: 30px;}
+#bigbox #footer .dv3 p{margin: 10px 0;font-size: 14px;line-height: 16px;color: #ccc}
+#bigbox #footer .dv3>.p1{margin: 20px 0}
+#bigbox #footer .dv3>.p1 span:nth-last-of-type(1){border-right: none;}
+#bigbox #footer .dv3>.p1>span{border-right: 1px solid #ccc;padding: 0 20px;}
+#bigbox #footer .dv3>.p2{color: #ccc;}
+#bigbox #footer .dv3>.p3{color: #ccc;}
+#bigbox #footer .dv3>.p3>span{color: black}
+#bigbox #footer .dv3>.p5>img{padding-right: 20px;}

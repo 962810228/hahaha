@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c96cd53-3520-42d1-b47a-c5dd1d04c9f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/api/request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/css/List.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/css/car.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/css/detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/css/rig.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/html/List.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/html/car.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/html/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/html/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/html/rig.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/img/buy_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/img/icon/buy_erweima.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/img/jiuji-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/img/jiuji_buy_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/img/loginBg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/img/main_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/img/main_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/img/main_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/img/shouye_nav_3.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/img/sun.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/js/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/js/detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/js/jquery-3.2.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/js/jquery.jqzoom-2.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/js/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/js/rig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.3-project/src/js/shoppingCar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.3-project/src/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/4.3-project/src/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.3-project/src/css/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/4.3-project/src/css/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.3-project/src/html/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/4.3-project/src/html/page.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1316419485">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="7730" />
+          <entry key="html" value="3367" />
+          <entry key="js" value="11884" />
+          <entry key="php" value="3402" />
+          <entry key="txt" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="7730" />
+          <entry key="HTML" value="3389" />
+          <entry key="JavaScript" value="11862" />
+          <entry key="PHP" value="3401" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="SQL" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="16" />
+          <entry key="html" value="19" />
+          <entry key="jpg" value="5" />
+          <entry key="js" value="18" />
+          <entry key="php" value="4" />
+          <entry key="png" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="16" />
+          <entry key="HTML" value="19" />
+          <entry key="Image" value="8" />
+          <entry key="JavaScript" value="18" />
+          <entry key="PHP" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5331695">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/js/login.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/js/page.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="142">
+                  <caret line="104" column="32" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/html/page.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="101">
+                  <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+                  <folding>
+                    <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/js/List.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="5940">
+                  <caret line="220" column="13" selection-start-line="220" selection-start-column="13" selection-end-line="220" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/js/shoppingCar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1053">
+                  <caret line="310" lean-forward="true" selection-start-line="310" selection-end-line="310" />
+                  <folding>
+                    <element signature="e#426#1919#0" />
+                    <element signature="e#1960#2907#0" />
+                    <element signature="e#2949#3939#0" />
+                    <element signature="e#3964#4699#0" />
+                    <element signature="e#4750#4785#0" />
+                    <element signature="e#5467#5491#0" />
+                    <element signature="e#6953#6977#0" />
+                    <element signature="e#5780#6594#0" />
+                    <element signature="e#6633#7722#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/js/detail.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="84">
+                  <caret line="187" column="38" lean-forward="true" selection-start-line="187" selection-start-column="38" selection-end-line="187" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#4029#6302#0" />
+                    <element signature="e#4397#4708#0" />
+                    <element signature="e#4786#5867#0" />
+                    <element signature="e#5910#6936#0" />
+                    <element signature="e#6998#8087#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/api/request.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="324">
+                  <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/html/detail.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="895">
+                  <caret line="106" column="39" lean-forward="true" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
+                  <folding>
+                    <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/css/detail.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="358">
+                  <caret line="92" column="15" selection-start-line="92" selection-start-column="15" selection-end-line="92" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/html/car.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="601">
+                  <caret line="118" column="54" selection-start-line="118" selection-start-column="54" selection-end-line="118" selection-end-column="54" />
+                  <folding>
+                    <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/css/car.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="371">
+                  <caret line="107" column="47" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/4.3-project/src/css/page.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3078">
+                  <caret line="114" column="32" selection-start-line="114" selection-start-column="32" selection-end-line="114" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Documents/WeChat Files/liangzhen_q/FileStorage/File/2019-04/PostCode.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="486">
+                  <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SPAN</find>
+      <find>focus</find>
+      <find>btn</find>
+      <find>container</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/4.3-project/src/css/base.css" />
+        <option value="$PROJECT_DIR$/4.3-project/src/css/page.css" />
+        <option value="$PROJECT_DIR$/4.3-project/src/html/login.html" />
+        <option value="$PROJECT_DIR$/4.3-project/src/css/login.css" />
+        <option value="$PROJECT_DIR$/4.3-project/src/html/GoodsList.html" />
+        <option value="$PROJECT_DIR$/4.3-project/src/css/List.css" />
+        <option value="$PROJECT_DIR$/4.3-project/src/js/login.js" />
+        <option value="$PROJECT_DIR$/4.3-project/src/html/List.html" />
+        <option value="$PROJECT_DIR$/4.3-project/src/html/page.html" />
+        <option value="$PROJECT_DIR$/4.3-project/src/js/page.js" />
+        <option value="$PROJECT_DIR$/4.3-project/src/js/List.js" />
+        <option value="$PROJECT_DIR$/4.3-project/src/html/rig.html" />
+        <option value="$PROJECT_DIR$/4.3-project/src/css/rig.css" />
+        <option value="$PROJECT_DIR$/4.3-project/src/api/request.php" />
+        <option value="$PROJECT_DIR$/4.3-project/src/js/rig.js" />
+        <option value="$PROJECT_DIR$/4.3-project/src/html/car.html" />
+        <option value="$PROJECT_DIR$/4.3-project/src/css/car.css" />
+        <option value="$PROJECT_DIR$/4.3-project/src/js/shoppingCar.js" />
+        <option value="$PROJECT_DIR$/4.3-project/src/html/detail.html" />
+        <option value="$PROJECT_DIR$/4.3-project/src/css/detail.css" />
+        <option value="$PROJECT_DIR$/4.3-project/src/js/detail.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 5.6" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="366" />
+    <option name="y" value="103" />
+    <option name="width" value="1009" />
+    <option name="height" value="884" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="worker Bench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="worker Bench" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="worker Bench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="worker Bench" type="462c0819:PsiDirectoryNode" />
+              <item name="4.3-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="worker Bench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="worker Bench" type="462c0819:PsiDirectoryNode" />
+              <item name="4.3-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="worker Bench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="worker Bench" type="462c0819:PsiDirectoryNode" />
+              <item name="4.3-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="worker Bench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="worker Bench" type="462c0819:PsiDirectoryNode" />
+              <item name="4.3-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="worker Bench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="worker Bench" type="462c0819:PsiDirectoryNode" />
+              <item name="4.3-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="worker Bench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="worker Bench" type="462c0819:PsiDirectoryNode" />
+              <item name="4.3-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="worker Bench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="worker Bench" type="462c0819:PsiDirectoryNode" />
+              <item name="4.3-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PHP\php\worker Bench\4.3-project\src\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PHP\php\worker Bench\4.3-project\src\img\icon" />
+      <recent name="D:\PHP\php\worker Bench\4.3-project\src\img" />
+      <recent name="D:\PHP\php\worker Bench\4.3-project\src\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c96cd53-3520-42d1-b47a-c5dd1d04c9f9" name="Default Changelist" comment="" />
+      <created>1554372105721</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554372105721</updated>
+      <workItem from="1554372107231" duration="155000" />
+      <workItem from="1554446822923" duration="530000" />
+      <workItem from="1554728209946" duration="5501000" />
+      <workItem from="1554775271481" duration="38173000" />
+      <workItem from="1554857287403" duration="37464000" />
+      <workItem from="1554944317416" duration="41252000" />
+      <workItem from="1555030384749" duration="18257000" />
+    </task>
+    <task id="LOCAL-00001" summary="PHP2.0">
+      <created>1554372200046</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554372200046</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="141332000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="PHP2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="PHP2.0" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/img/Good2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/img/Good1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/js/jquery-3.2.1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/img/jiuji-logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/img/loginBg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="62" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/css/List.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="92" column="21" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/js/jquery.jqzoom-2.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+          <folding>
+            <element signature="e#23#29#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/img/jiuji_buy_logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/img/icon/buy_erweima.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/js/List.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5940">
+          <caret line="220" column="13" selection-start-line="220" selection-start-column="13" selection-end-line="220" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/css/page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3078">
+          <caret line="114" column="32" selection-start-line="114" selection-start-column="32" selection-end-line="114" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/WeChat Files/liangzhen_q/FileStorage/File/2019-04/PostCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="255" column="37" selection-start-line="255" selection-start-column="33" selection-end-line="255" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/css/rig.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="70" lean-forward="true" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/html/rig.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/js/rig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+          <folding>
+            <element signature="e#2670#2951#0" />
+            <element signature="e#3022#3426#0" />
+            <element signature="e#3495#3761#0" />
+            <element signature="e#3834#4124#0" />
+            <element signature="e#4199#4866#0" />
+            <element signature="e#5017#5280#0" />
+            <element signature="e#5315#5526#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/html/car.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="118" column="54" selection-start-line="118" selection-start-column="54" selection-end-line="118" selection-end-column="54" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/html/List.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="72" column="52" lean-forward="true" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/css/car.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="107" column="47" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/js/shoppingCar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="310" lean-forward="true" selection-start-line="310" selection-end-line="310" />
+          <folding>
+            <element signature="e#426#1919#0" />
+            <element signature="e#1960#2907#0" />
+            <element signature="e#2949#3939#0" />
+            <element signature="e#3964#4699#0" />
+            <element signature="e#4750#4785#0" />
+            <element signature="e#5467#5491#0" />
+            <element signature="e#6953#6977#0" />
+            <element signature="e#5780#6594#0" />
+            <element signature="e#6633#7722#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/css/detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="92" column="15" selection-start-line="92" selection-start-column="15" selection-end-line="92" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/html/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="895">
+          <caret line="106" column="39" lean-forward="true" selection-start-line="106" selection-start-column="39" selection-end-line="106" selection-end-column="39" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/api/request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/js/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="187" column="38" lean-forward="true" selection-start-line="187" selection-start-column="38" selection-end-line="187" selection-end-column="38" />
+          <folding>
+            <element signature="e#4029#6302#0" />
+            <element signature="e#4397#4708#0" />
+            <element signature="e#4786#5867#0" />
+            <element signature="e#5910#6936#0" />
+            <element signature="e#6998#8087#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/html/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#main#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4.3-project/src/js/page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="104" column="32" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

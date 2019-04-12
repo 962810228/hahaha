@@ -1,0 +1,40 @@
+body,html{height: 100%;width: 100%}
+#bigbox{width: 100%;height: 100%;background: #F6F6F6;margin: 0 auto}
+#bigbox .container{width: 984px;}
+
+#bigbox #head{background-color: white;}
+#bigbox #head .head_1{padding: 18px 0}
+#bigbox #head .head_1 span{font-size: 22px;line-height: 36px;margin: 23px 39px;padding-left: 39px;
+            border-left: 1px solid #ccc;color: #CC3A1E;}
+
+#main{background: url("../img/loginBg.jpg") no-repeat;width: 100%;height: 500px;}
+#main #form1{float: right;border: 6px solid #ccc;background: white;
+    margin-right: 10px;height: 370px;vertical-align: center}
+#main #form1 p{border-bottom: 1px solid #ccc;}
+#main #form1 p .span_1{display: block;margin:0 30px;font-size: 16px;line-height: 56px;
+            color: black;height: 56px;cursor: pointer;}
+#main #form1 p .span_2{display: block;margin:0 30px;font-size: 16px;line-height: 56px;
+            color: black;height: 56px;cursor:pointer;}
+#main #form1 p a{float: right;margin-right: 30px;line-height: 56px;height: 56px;font-size: 10px;}
+.active{color: red !important;border-bottom: 2px solid red;}
+
+
+#main #form1 #user{width: 271px;height:35px;font-size: 14px;line-height: 35px;box-sizing: border-box;
+        border-bottom: 1px solid #cccccc;padding-left: 36px;margin: 20px 0 20px 30px;}
+#main #form1 #pass{width: 271px;height:35px;font-size: 14px;line-height: 35px;box-sizing: border-box;
+    border-bottom: 1px solid #cccccc;padding-left: 36px;margin: 0 0 20px 30px;}
+#main #form1 .checkbox{margin-left: 30px;font-size: 16px;}
+#main #form1 .checkbox a{float: right;font-size: 12px;text-decoration:overline; }
+#main #form1 #btn{width: 271px;height: 40px;font-size: 18px;line-height: 40px;
+    background: #C80F1E;margin-left: 30px;}
+
+
+#bigbox #footer .dv3{text-align: center;padding-top: 30px;}
+#bigbox #footer .dv3 p{margin: 10px 0;font-size: 14px;line-height: 16px;color: #ccc}
+#bigbox #footer .dv3>.p1{margin: 20px 0}
+#bigbox #footer .dv3>.p1 span:nth-last-of-type(1){border-right: none;}
+#bigbox #footer .dv3>.p1>span{border-right: 1px solid #ccc;padding: 0 20px;}
+#bigbox #footer .dv3>.p2{color: #ccc;}
+#bigbox #footer .dv3>.p3{color: #ccc;}
+#bigbox #footer .dv3>.p3>span{color: black}
+#bigbox #footer .dv3>.p5>img{padding-right: 20px;}

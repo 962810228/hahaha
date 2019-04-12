@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/detail.js"></script>
+    <script src="../js/jquery.jqzoom-2.2.js"></script>
+
+</head>
+<body>
+    <div id="bigbox">
+        <div id="top">
+            <div class="container clearfix">
+                <div class="topLeft fl">
+                    <span class="location">定位</span>
+                    <span class="log"><a href="login.html">登陆</a></span>
+                    <i class="jifen"></i><span class="font_jifen">积分</span>
+                    <i class="email"></i><span class="font_email">邮箱</span>
+                    <span class="exit"><a href="#">退出</a></span>
+                </div>
+
+                <ul class="fr">
+                    <li>
+                        <span><a href="#">个人中心</a><i class="icon_jiantou"></i></span>
+                        <ul class="center_geren">
+                            <li>我的订单</li>
+                            <li>我的订单</li>
+                            <li>我的订单</li>
+                            <li>我的订单</li>
+                            <li>我的订单</li>
+                            <li>我的订单</li>
+                            <li>我的订单</li>
+                        </ul>
+                    </li>
+                    <li><span><a href="#">会员俱乐部</a></span></li>
+                    <li><span><a href="#">帮助中心</a></span></li>
+                    <li><span><a href="#">客户端</a></span></li>
+                    <li><span><a href="#">在线客服</a></span></li>
+                    <li>
+                        <span><a href="#">网站导航</a></span>
+                        <dl class="net_nav">
+                            <dt class="dt_1"></dt>
+                            <dt class="dt_2"></dt>
+                            <dt class="dt_3"></dt>
+                        </dl>
+                    </li>
+                    <li><span><a href="#">不良信息举报</a></span></li>
+                    <li><span><a href="#">400-008-3939</a></span></li>
+                </ul>
+            </div>
+        </div>
+
+        <header id="head">
+            <div class="container clearfix">
+                <div class="jiwang fl">
+                    <a href="page.html"><img src="../img/pageIMG_jiuji.png"></a>
+                </div>
+                <div class="search fl clearfix">
+                    <input type="text" class="search_l" placeholder="iphone XS Max">
+                    <input type="button" class="search_r" value="搜索">
+                    <ul class="search_b fl clearfix">
+                        <li>热门搜索:</li>
+                        <li><span>华为P30</span></li>
+                        <li><span>华为P30</span></li>
+                        <li><span>华为P30</span></li>
+                        <li><span>华为P30</span></li>
+                        <li><span>华为P30</span></li>
+                        <li><span>华为P30</span></li>
+                    </ul>
+                    <div class="search_buy fr">
+                        <span class="buy">购物车</span>
+                        <div class="search_buyMax"></div>
+                    </div>
+                </div>
+                <ul class="search_detail fl">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">首页</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main id="main">
+            <div class="container clearfix show">
+                <!--<p id="tou">
+                    <a href="page.html"><span>首页</span></a>
+                    <a href="List.html"><span>手机通讯</span></a>
+                    <a href="List.html"><span>手机</span></a>
+                    <a href="#"><span>OPPO</span></a>
+                    <a href="#"><span>OPPO Reno 全网通版</span></a>
+                </p>
+                <div id="tu">
+                    <div class="bigImg magnify-box">
+                        <div class="min-img">
+                            <img src="${item.img}" />
+                            <div class="mask"></div>
+                        </div>
+                        <div class="max-img">
+                            <img src="./images/max1.jpg">
+                        </div>
+                    </div>
+                    <div class="minImg img-list clearfix">
+                        <div class="pre"> < </div>
+                        <ul class="minImg_uls clearfix">
+                            <li><img src="${item.url[0]}"></li>
+                            <li><img src="${item.url[1]}"></li>
+                            <li><img src="${item.url[2]}"></li>
+                            <li><img src="${item.url[3]}"></li>
+                        </ul>
+                        <div class="next"> > </div>
+                    </div>
+                </div>
+                <div class="des_1">
+                    <p class="p1">OPPO Reno 全网通版 雾海绿 8GB+256GB</p>
+                    <p class="p2">99元预订享好礼！4月19日同步首发！</p>
+                    <p class="p3">九 机 价：<span>¥3298.00</span> [价格走势] [降价通知]</p>
+                    <span class="h1">颜 色</span>
+                    <ul class="des_1_uls clearfix">
+                        <li><span>雾海绿</span></li>
+                        <li><span>星云紫</span></li>
+                        <li><span>薄雾粉</span></li>
+                        <li><span>极夜黑</span></li>
+                    </ul>
+                    <span class="h1">容 量</span>
+                    <ul class="des_2_uls clearfix">
+                        <li><span>6GB+128GB</span></li>
+                        <li><span>6GB+128GB</span></li>
+                        <li><span>6GB+128GB</span></li>
+                    </ul>
+                    <span class="h1">版 本</span>
+                    <ul class="des_3_uls clearfix">
+                        <li><span>华为P30全网通版</span></li>
+                        <li><span>华为P30Pro全网通版</span></li>
+
+                    </ul>
+                </div>
+                <div class="des_2">
+                    <p class="add_1">
+                        <span class="sp1">配送至</span>
+                        <span class="sp2">广东省广州市花都区</span>
+                    </p>
+                    <span class="sp3">因配送地址不同，送达时间以订单显示为准</span>
+                </div>
+                <div class="des_3">
+                    <button class="btn">购买</button>
+                    <button>分期</button>
+                </div>-->
+            </div>
+        </main>
+
+
+        <footer id="footer">
+            <div class="container clearfix">
+                <div class="dv1 fl">
+                    <ul>
+                        <li><i class="i1"></i><h3>新九机 心生态</h3><p>全新九机 用心可见</p></li>
+                        <li><i class="i2"></i><h3>新九机 心生态</h3><p>全新九机 用心可见</p></li>
+                        <li><i class="i3"></i><h3>新九机 心生态</h3><p>全新九机 用心可见</p></li>
+                        <li><i class="i4"></i><h3>新九机 心生态</h3><p>全新九机 用心可见</p></li>
+                        <li><i class="i5"></i><h3>新九机 心生态</h3><p>全新九机 用心可见</p></li>
+                    </ul>
+                </div>
+                <div class="dv2 clearfix">
+                    <dl>
+                        <dt>新手指南
+                        <dd><span>会员注册</span></dd>
+                        <dd><span>九机评测</span></dd>
+                        <dd><span>积分介绍</span></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>新手指南
+                        <dd><span>会员注册</span></dd>
+                        <dd><span>九机评测</span></dd>
+                        <dd><span>积分介绍</span></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>新手指南
+                        <dd><span>会员注册</span></dd>
+                        <dd><span>九机评测</span></dd>
+                        <dd><span>积分介绍</span></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>新手指南
+                        <dd><span>会员注册</span></dd>
+                        <dd><span>九机评测</span></dd>
+                        <dd><span>积分介绍</span></dd>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>新手指南
+                        <dd>会员注册</dd>
+                        <dd>九机评测</dd>
+                        <dd>积分介绍</dd>
+                        </dt>
+                    </dl>
+                    <div class="fr erweima clearfix">
+                        <img src="../img/icon/erweima.png" height="62" width="63"/>
+                        <p class="fl">九机网官方微信</p>
+                        <span class="fl">扫描二维码,即刻调戏小久,更多精彩活动等着你哦!</span>
+                    </div>
+                </div>
+                <div class="dv3">
+                    <p class="p1"><span>常见问题</span><span>常见问题</span><span>常见问题</span><span>常见问题</span><span>常见问题</span><span>常见问题</span><span>常见问题</span><span>常见问题</span><span>常见问题</span></p>
+                    <p class="p2">各门店营业时间：周一至周日 09:00-21:30      全国服务热线：400-008-3939   0871-68393939      工作时间：周一至周日 09:00-21:30</p>
+                    <p class="p3"><span>网站ICP备案号：</span>滇ICP备06002001号      <span>电信业务经营许可证：</span>滇B2-20180054号      滇公网安备 53010202000261号     </p>
+                    <p class="p4">Copyright © 2006 - 2019 九机网 All Rights Reserved</p>
+                    <p class="p4">云南九机信息技术有限公司版权所有</p>
+                    <p class="p5">
+                        <img src="../img/icon/footer_1.png" height="48" width="131"/>
+                        <img src="../img/icon/footer_2.png" height="48" width="131"/>
+                        <img src="../img/icon/footer_3.png" height="48" width="131"/>
+                        <img src="../img/icon/footer_4.png" height="48" width="131"/>
+                        <img src="../img/icon/footer_5.png" height="48" width="131"/>
+                        <img src="../img/icon/footer_6.png" height="48" width="131"/>
+                    </p>
+                    <p class="p6">
+                        <a href="#">友情链接</a>
+                    <ul>
+
+                    </ul>
+                    <a href="#">更多</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

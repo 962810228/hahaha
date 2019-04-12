@@ -9,7 +9,7 @@ img {vertical-align:middle; }
 或者用display：block也可以*/
 h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:1em;}
 /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
-a{text-decoration: none;}
+a{text-decoration: none;color: #926B7F}
 table{border-collapse: collapse;}
 s,i,em{font-style:normal;text-decoration:none;}
 b{font-weight: normal;}
