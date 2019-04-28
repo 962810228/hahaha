@@ -1,0 +1,500 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px "苹方 中等", "Helvetica";background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#2d374b;text-decoration:none}
+a:hover{color:#cd0200;text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+
+html,body{width: 100%;height: 100%}
+.fcmusic{
+    height: 100%;
+    width: 100%;
+    background: url("../images/logbg.jpg") no-repeat;
+    position: relative;
+}
+
+.fcmusic .items-group {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.fcmusic .items-group .item {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    visibility: hidden;
+    position: relative;
+    position: absolute;
+    -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+    -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+    box-sizing: border-box;
+    opacity: 1;
+    visibility: visible;
+
+}
+.fcmusic .items-group .item .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -80px;
+}
+.fcmusic .items-group .item .head .head_1{
+    margin-left: 46px;
+}
+.fcmusic .items-group .item .head .head_1 a{
+     display: block;
+ }
+.fcmusic .items-group .item .head .head_1 a i{
+    display: block;
+    font-size: 28px;
+}
+.fcmusic .items-group .item .head .head_3{
+    margin-right: 46px;
+}
+.fcmusic .items-group .item .head .head_3 a{
+    display: block;
+}
+.fcmusic .items-group .item .head .head_3 a i{
+    display: block;
+    font-size: 28px;
+}
+.fcmusic .items-group .item .head_2{
+    width: 762px;
+    text-align: center;
+    margin-top: -6px;
+    padding-top: 10px;
+}
+.fcmusic .items-group .item .head .head_2 p{
+    font-size: 17px;
+    line-height: 17px;
+    color: #465775
+}
+.fcmusic .items-group .item .head .head_2 span{
+    font-size: 15px;
+    line-height: 26px;
+    color: #435C7A
+}
+
+
+
+
+
+
+
+
+.fcmusic .items-group .item:hover .bg {
+  opacity: 0.2;
+}
+
+.fcmusic .items-group .item .bg {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+.fcmusic .items-group .item .blur {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  position: absolute;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+.fcmusic .items-group .item .block {
+  width: 100%;
+
+  padding: 10px;
+  color: #ffffff;
+  -webkit-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  max-width: 450px;
+  overflow: hidden;
+  height: 602px;
+  border-radius: 10px;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: none;
+  z-index:1000;
+    position: relative;
+}
+/*.fcmusic .items-group .item .block .bg_bottom{
+    height: 2208px;
+    width: 100%;
+    background: url("../images/logbg.jpg") no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}*/
+.fcmusic .items-group .item .block .circleLight {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  border-radius: 10px;
+  background: -webkit-radial-gradient(80px 40px, circle, #ffffff, rgba(0, 0, 0, 0));
+  background: radial-gradient(circle at 80px 40px, #ffffff, rgba(0, 0, 0, 0));
+
+}
+
+.fcmusic .items-group .item .block .text {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position: center;
+  background-attachment: fixed;
+}
+.songtext{
+  line-height:25px;
+  height:25px;
+    margin: 20px 0 ;
+}
+
+.songtext .songname{
+  font-weight: bold;
+  font-family:"苹方 中等", "Helvetica";
+  background: linear-gradient(to right, #88ada6, #2e4e7e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*
+.LycText{
+  font-size:12px;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+*/
+.fcmusic .items-group .item .block span {
+  font-family: sans-serif;
+  margin-bottom: 35px;
+  z-index:999;
+  color:#FFF;
+}
+
+.fcmusic .items-group .item .block #tools{
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.fcmusic .items-group .item .block p {
+  font-family: sans-serif;
+  font-size: 16px;
+  background: linear-gradient(to right,#DDD,#888);
+  -webkit-background-clip: text;
+  color: transparent;  
+}
+
+/*.fcmusic .items-group .item .block {
+  box-shadow: 0px 0px 70px #111;
+}*/
+
+.fcmusic .items-group .item .block .circleLight {
+  opacity: 0.4;
+}
+
+.round_icon{
+  width: 180px;
+  height: 180px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.play-tx {
+  animation: ripple 1.2s linear infinite;
+  border-radius: 50%;
+}
+
+.play-tx2 {
+  animation: icon_rotate 20s linear infinite,ripple 1.2s linear infinite;
+  border-radius: 50%;
+}
+
+.icon{
+  margin:92px auto;
+  padding-bottom:70px;
+  text-align:center;
+  opacity: 1;
+  z-index: 999;
+}
+.play-left{
+  float:left;
+  display: -webkit-box;
+  font-size:30px;
+  background: linear-gradient(to right,#DDD,#888);
+  -webkit-background-clip: text;
+  color: transparent; 
+  padding-left: 85px;
+}
+.play-right{
+  float:right;
+  display: -webkit-box;
+  font-size:30px;
+  background: linear-gradient(to right,#DDD,#888);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-right: 85px;
+}
+.play{
+  font-size:75px;
+  margin:-21px 0 0 0;
+  background: linear-gradient(to right,#DDD,#888);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/** 进度条css */
+.slice {
+  width:0;
+  height:0;
+  border-radius:20px;
+  border-width:20px;
+  border-style:solid;
+  border-color:red transparent transparent transparent;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(248,248,255,0.3), 0 0 0 20px rgba(248,248,255,0.3), 0 0 0 40px rgba(248,248,255,0.3), 0 0 0 60px rgba(248,248,255,0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(230,230,250,0.3), 0 0 0 40px rgba(230,230,250,0.3), 0 0 0 60px rgba(230,230,250,0.3), 0 0 0 70px rgba(230,230,250,0);
+  }
+}
+
+@keyframes icon_rotate {
+  0% {
+	-webkit-transform: rotate(0deg);
+  }
+  100% {
+	-webkit-transform: rotate(360deg);
+  }
+}
+
+.scale_panel{
+	font-size:10px;
+	max-width:450px;
+	position:absolute; 
+	line-height:12px; 
+	top:0;
+    left: 0;
+    right: 0;	
+}
+.scale_panel .r{
+	float:right;
+}
+.scale span{
+	width:5px;
+	height:12px; 
+	position:absolute; 
+	left:0px;
+	right:0px;
+	top:-5px;
+	cursor:pointer;
+}
+.scale{
+    background-repeat: repeat-x; 
+    background-position: 0 100%;
+    background-color: #000; 
+    border-left: 1px #000 solid;
+    height: 2px; 
+	left:0px;
+	right:0px;	
+    position: relative;
+    font-size: 0px; 
+    border-radius: 2px;
+ }
+.scale div{ 
+    background-repeat: repeat-x; 
+	background-color: #F1F1F1; 
+	width: 0px; position: absolute; 
+	height: 2px; 
+	left:3px;
+    right:3px;	
+	bottom:0; 
+	
+}
+li{
+	font-size:12px;
+	line-height:20px;
+	position:relative; 
+	height:20px; 
+	list-style:none;
+}
+
+input[type=range]{ 
+    outline: none; 
+     -webkit-appearance: none;/*清除系统默认样式*/  
+     width:75% !important;
+     background: -webkit-linear-gradient(rgba(250,240,230,0.2), rgba(250,240,230,0.2)) no-repeat, rgba(0,0,0,0.2);
+     background-size: 0% 100%;/*设置左右宽度比例*/  
+     height: 2px;/*横条的高度*/ 
+    -webkit-appearance: none;/*清除系统默认样式*/
+    z-index:1000;
+    margin-bottom: 25px;
+}
+
+.fcmusic .items-group .item .block #tools .timer_left{
+    margin-bottom: 60px;
+   display: block;
+    position: absolute;
+    left: 6px;bottom: -82px;
+    width: 10px;
+    height: 60px;
+    font-size: 15px;
+}
+.fcmusic .items-group .item .block #tools .timer_right{
+    margin-bottom: 60px;
+    display: block;
+    position: absolute;
+    right: 28px;bottom: -82px;
+    width: 10px;
+    height: 60px;
+    font-size: 15px;
+}
+
+input[type=range]::-webkit-slider-thumb {  
+   -webkit-appearance: none;/*清除系统默认样式*/  
+    height:13px;/*拖动块高度*/  
+    width: 13px;/*拖动块宽度*/  
+    background: rgba(250,240,230,0.5);/*拖动块背景*/  
+    border-radius: 50%; /*外观设置为圆形*/  
+}
+.search{
+    width: 100%;
+    height: 50px;
+    color: #4d5a5e;
+    background: white;
+    border: 1px solid #cfdfe3;
+    border-bottom-color: #d2e2e7;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.2);
+}
+
+
+.fcmusic .items-group .item #footer{
+    height: 60px;width: 100%;
+    margin-bottom: -60px;
+}
+.fcmusic .items-group .item #footer ul{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.fcmusic .items-group .item #footer ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+.fcmusic .items-group .item #footer ul li:nth-child(2){
+    position: absolute;
+    left: 94px;
+    top: 20px;
+}
+.fcmusic .items-group .item #footer ul li:nth-child(5){
+    position: absolute;
+    right: 94px;
+    top:20px;
+}
+.fcmusic .items-group .item #footer ul li:not(.middle) a{
+    padding-top: 0px;
+    color: #405875;
+    margin-bottom: 10px;
+}
+.fcmusic .items-group .item #footer ul li a i{
+    font-size: 22px;
+}
+.fcmusic .items-group .item #footer ul li a span{
+    font-size: 10px;
+    line-height: 24px;
+}
+.fcmusic .items-group .item #footer ul li:hover a{
+    color: #cf8a1c;
+}
+.fcmusic .items-group .item #footer ul li:nth-child(3){
+    border-radius: 100px 100px;
+    position: relative;
+    left: 42px;
+    top: -17px;
+}
+.fcmusic .items-group .item #footer ul li:nth-child(3) a i{
+    border: 20px solid #DFE0DB;
+    font-size: 50px;
+    border-radius: 50% 50%;
+    color: #405875;
+    background-color: #DFE0DB;
+    align-items: center;
+    padding-left: 0px;
+    width: 100px;
+    height: 100px;
+}

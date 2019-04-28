@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>推荐页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="vp">
+    <script type="text/javascript">
+        // // 把尺寸放大N倍（N是window.devicePixelRatio）
+        // var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+        // //物理像素*设备像素比=真实像素
+        // document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+        // // 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+        var scale = 1/window.devicePixelRatio;
+        var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+        document.getElementById("vp").content = mstr;
+    </script>
+    <link rel="stylesheet" href="../CSS/Base.css">
+    <link rel="stylesheet" href="../CSS/recommend.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/recom.js"></script>
+</head>
+<body>
+    <div id="box">
+        <header id="header">
+            <ul>
+                <li><a href="#"><i class="iconfont icon-fangdajing"></i></a></li>
+                <li>
+                    <a href="#"><span>推 荐</span></a>
+                    <a href="#"><span>电 台</span></a>
+                    <a href="#"><span>视 频</span></a>
+                </li>
+                <li><a href="#"><i class="iconfont icon-fangdajing"></i></a></li>
+            </ul>
+        </header>
+        <nav id="bg" class="clearfix">
+            <!--<img src="../images/jita.jpg" width=100% height="497px">-->
+            <div class="banner">
+                <ul class="clearfix">
+                    <li><img src="../images/jita.jpg"></li>
+                    <li><img src="../images/nav_1.jpg"></li>
+                    <li><img src="../images/nav_2.jpg"></li>
+                    <li><img src="../images/nav_3.jpg"></li>
+                    <li><img src="../images/nav_4.jpg"></li>
+                </ul>
+                <div class="jian clearfix">
+                    <img src="../images/sun.gif" class="prev">
+                    <img src="../images/sun.gif" class="next">
+                </div>
+            </div>
+        </nav>
+        <nav id="nav">
+            <ul>
+                <li><a href="#"><i class="iconfont icon-my"></i><i class="i1">每日推荐</i></a></li>
+                <li><a href="#"><i class="iconfont icon-my"></i><i class="i1">失眠模式</i></a></li>
+                <li><a href="#"><i class="iconfont icon-my"></i><i class="i1">歌单</i></a></li>
+                <li><a href="#"><i class="iconfont icon-my"></i><i class="i1">排行榜</i></a></li>
+            </ul>
+        </nav>
+        <main id="main">
+            <div class="main1">
+                <div class="title">
+                    <i class="m1">推荐歌单</i>
+                    <i class="m2"> > </i>
+                </div>
+                <div class="navcontent">
+                    <!--<figure>
+                        <img src="../images/xiaohai.jpg" height="384" width="384"/>
+                        <figcaption>深度睡眠 音符伴你入梦 愿你一夜好眠</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/jita.png" height="384" width="384"/>
+                        <figcaption class="fs">愿孤独的诗里都有旋律 民谣的梦里都有远方</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/dahai.jpg" height="384" width="384"/>
+                        <figcaption>与你赴约|你是我耳边永不退潮的海</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+            <div class="main2">
+                <div class="title">
+                    <i class="m1">最新音乐</i>
+                    <i class="m2"> > </i>
+                </div>
+                <div class="navcontent">
+                    <!--<figure>
+                        <img src="../images/juzi.jpg" height="384" width="384"/>
+                        <figcaption>深度睡眠 音符伴你入梦 愿你一夜好眠</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/shuiping.jpg" height="384" width="384"/>
+                        <figcaption>深度睡眠 音符伴你入梦 愿你一夜好眠</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/dawu.jpg" height="384" width="384"/>
+                        <figcaption>深度睡眠 音符伴你入梦 愿你一夜好眠</figcaption>
+                    </figure>-->
+                </div>
+            </div>
+
+        </main>
+        <footer id="footer">
+            <ul>
+                <li><a href="recommend.html"><i class="iconfont icon-shouyeshouye"></i><span>发现</span></a></li>
+                <li><a href="player_2.html"><i class="iconfont icon-shouyeshouye"></i><span>我的音乐</span></a></li>
+                <li class="middle"><a href="#"><i class="iconfont icon-camera"></i></a></li>
+                <li><a href="#"><i ></i></a></li>
+                <li><a href="#"><i class="iconfont icon-my"></i><span>动态</span></a></li>
+                <li><a href="#" class="transfer"><i class="iconfont icon-my"></i><span>账号</span></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

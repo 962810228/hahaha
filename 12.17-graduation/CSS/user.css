@@ -1,0 +1,47 @@
+html,body{height: 100%;width: 100%;background: #DFE0DB;}
+
+#box{display: flex;flex-direction: column;height: 100%;width: 100%;margin: 0 auto;font-family: "苹方 中等","Helvetica";
+        background: url("../images/bg.jpg") no-repeat}
+#header{display: flex;height: 681px;flex-direction: column;align-items: center;justify-content: center;}
+#header figure{display: flex;flex-direction: column;align-items: center;justify-content: center;}
+#header figure img{width: 242px;height: 242px;border-radius: 50% 50%;margin: 133px 0 30px;}
+#header figure figcaption{font-size: 43px;line-height: 63px;color: #fff;}
+#header figure p{font-size: 35px;line-height: 47px;color:#fff;}
+#header div ul{display: flex;flex-direction: row;justify-content: space-around;align-items: center;
+                height: 173px;width: 584px;}
+#header div ul li a{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+#header div ul li i{font-size: 35px;line-height: 50px;padding-top: 63px;color: #19253a;}
+#header div ul li span{font-size: 34px;line-height: 74px;color: #7489a5;}
+#header div ul li:nth-child(1) span,#header div ul li:nth-child(2) span{letter-spacing: 10px;}
+
+
+#main{overflow-x: hidden;overflow-y: scroll;box-sizing: border-box;flex: 1;width: 100%;}
+#main a{display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
+#main a>div{display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
+#main a>div i{font-size: 54px;width: 62px;margin: 0 53px 0 88px;}
+#main a>div span{font-size: 37px;line-height: 54px;color: #19253a;letter-spacing: 8px;}
+#main a i{font-size: 37px;line-height: 54px;color: #7489a5;margin-right: 91px;}
+#main .tui{display: block;width: 100%;text-align: center}
+#main .tui input{font-size: 34px;line-height: 90px;color: #fff;border: 2px solid #ccc;text-align: center;
+                    padding: 0 148px;border-radius: 40px 40px;background-color: #405875;
+                    height: 100%;transition: all 4s;transform: rotate(0deg)}
+#main .tui input:hover{transform: rotate(360deg)}
+#main .dd{padding-bottom: 60px;text-align: center}
+#main .dd:nth-child(1){padding-top: 153px;}
+#main .dd:nth-child(3),#main .dd:nth-child(5){padding-top: 128px;}
+#main .dd:last-child{padding: 70px 0 66px;}
+
+
+
+#footer{height: 146px;}
+#footer ul{display: flex;height: 100%;justify-content: space-around;align-items: center;position: relative;}
+#footer ul li a{display: flex;flex-direction: column;justify-content: center;text-align: center}
+#footer ul li:nth-child(2){position: absolute;left: 280px;top: -6px;}
+#footer ul li:nth-child(5){position: absolute;right: 330px;top:-5px;}
+#footer ul li:not(.middle) a{padding-top: 20px;color: #405875;margin-bottom: 10px;}
+#footer ul li a i{font-size: 71px;}
+#footer ul li a span{font-size: 29px;line-height: 47px;}
+#footer ul li:hover a{color: #cf8a1c}
+#footer ul li:nth-child(3){border-radius: 100px 100px;position: relative;left: 96px;top: -39px;}
+#footer ul li:nth-child(3) a i{border: 20px solid #DFE0DB;font-size: 165px;border-radius: 50% 50%;color: #405875;
+    background-color: #DFE0DB;align-items: center;padding-left: 0px;width: 203px;height: 203px;}

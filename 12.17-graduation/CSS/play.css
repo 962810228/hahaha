@@ -1,0 +1,51 @@
+html,body{height: 100%;width: 100%;background: #DFE0DB;}
+
+#box{display: flex;flex-direction: column;background: url("../images/logbg.jpg") no-repeat;
+        font-family: "苹方 中等", "Helvetica";margin: 0 auto;height: 100%;width: 100%;}
+
+
+
+#box #header{display: flex;flex-direction: row;justify-content: space-between;
+                align-items: center;box-sizing: border-box;
+                padding-top: 40px;}
+#box #header .head_1{margin-left: 53px;}
+#box #header .head_1 a{display: block;}
+#box #header .head_1 a i{display: block;font-size: 85px;}
+#box #header .head_2{width: 762px;text-align: center;padding-top: 20px;}
+#box #header .head_2 p{font-size: 50px;line-height: 60px;color: #465775}
+#box #header .head_2 span{font-size: 35px;line-height: 45px;color: #435C7A}
+
+#box #header .head_3{margin-right: 65px;}
+#box #header .head_3 a{display: block}
+#box #header .head_3 a i{display: block;font-size: 67px;}
+
+
+#box #main{flex: 1;overflow-x: hidden;overflow-y: scroll;width: 100%;
+            box-sizing: border-box;height: 1658px;}
+#box #main #bigImg{display: flex;flex-direction: row;justify-content: space-around;
+                    margin-top: 256px;}
+#box #main #bigImg img{display: block;width: 755px;height: 755px;
+                border-radius: 50%;/*animation: xuanzhuan linear 20s infinite*/}
+
+@keyframes xuanzhuan {
+    0%{}
+    100%{transform: rotate(360deg)}
+}
+
+
+
+#box #footer{height: 360px;display: flex;flex-direction: column;align-items: center}
+#box #footer .bar{display: flex;flex-direction: row;justify-content: space-around;
+                width: 950px;height: 73px;}
+#box #footer .bar span{line-height: 73px;font-size: 40px;height: 65px;}
+
+
+#box #footer .icon{display: flex;width: 100%;flex-direction: row;margin-top: 64px;
+                justify-content: space-around;box-sizing: border-box}
+#box #footer .icon i{display: block;font-size: 81px;}
+#box #footer .icon i:nth-of-type(3){width: 112px;height:156px;position: relative}
+#box #footer .icon i:nth-of-type(3) i
+            {font-size: 156px;position: absolute;left: -14px;top: -55px;}
+#box #footer .icon i:nth-of-type(3) .end{display: none;}
+
+

@@ -177,6 +177,7 @@ document.addEventListener("DOMContentLoaded",function ()
             else { $(".btn").prop("disabled",true);}
         }
         console.log($(".btn"))
+        //点击提交按钮
         $(".btn").on("click",function ()
         {
             var _user=$("#user").val();
@@ -199,7 +200,7 @@ document.addEventListener("DOMContentLoaded",function ()
                     alert(value+"正在自动跳转,请耐心等待");
                     setTimeout(function ()
                     {
-                        location.href="login.html"
+                        location.href="recommend.html";
                     },2000)
                 }
             })

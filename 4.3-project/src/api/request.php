@@ -122,7 +122,6 @@ if ($code == 6)//列表商品排序
     echo $content;
 }
 
-
 $id=isset($_POST["id"]) ? $_POST["id"] : "";
 //$code = 7;
 //$id ="001";
@@ -148,7 +147,6 @@ if ($code == 7)//渲染商品的详情页
     $content = json_encode($content);
     echo $content;
 }
-
 
 $uname=isset($_POST["uname"]) ? $_POST["uname"] : "";
 $color=isset($_POST["color"]) ? $_POST["color"] : "";
@@ -247,7 +245,7 @@ if ($code == 10)//点击减号商品时请求sql
     }
     echo $num;
 }
-if ($code == 11)//点击减号商品时请求sql
+if ($code == 11)//点击加号商品时请求sql
 {
     $sql = "select * from `$uname` where id='$id'";
     $res = $con->query($sql);//返回操作的对象

@@ -1,0 +1,19 @@
+html,body{height: 100%;width: 100%;background: #DFE0DB;}
+#box{display: flex;flex-direction: column;height: 100%;width: 100%;margin: 0 auto;font-family: "苹方 中等","Helvetica";
+    background: url("../images/rigbg.jpg") no-repeat;}
+#box header{width:100%; display: flex;height: 933px;flex-direction: column;align-items: center;justify-content: center}
+#box header img{display: block;justify-content:space-around;height: 300px;width:300px;border-radius: 85px;}
+#box header .bg{display: block;justify-content:space-around;height: 200px;width:200px;
+    background: url("../images/rigbg.jpg") no-repeat;}
+#box header a{display: block;}
+
+
+#main{overflow-x: hidden;overflow-y: scroll;box-sizing: border-box;flex: 1;width: 100%;}
+#box main #mid{display: flex;flex-direction: column;justify-content: center;
+                align-items: center}
+#box main #mid input{width: 785px;height: 146px;font-size: 48px;line-height:146px;
+    text-align: center;margin: 35px 0;font-weight: bold;border: 2px solid #fff;
+    border-radius: 60px;background: rgba(0,0,0,0);color: #D9E0E6;
+    box-sizing: border-box}
+#box main #mid a{font-size: 32px;line-height: 80px;color: #cf8a1c;display: block}
+#box main #mid a:hover{text-decoration: underline;}

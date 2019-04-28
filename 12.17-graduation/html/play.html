@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>播放页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="vp">
+    <script type="text/javascript">
+        // // 把尺寸放大N倍（N是window.devicePixelRatio）
+        // var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+        // //物理像素*设备像素比=真实像素
+        // document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+        // // 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+        var scale = 1/window.devicePixelRatio;
+        var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+        document.getElementById("vp").content = mstr;
+    </script>
+    <link rel="stylesheet" href="../CSS/Base.css">
+    <link rel="stylesheet" href="../CSS/play.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/play.js"></script>
+    <script src="../js/jQueryRotate.js"></script>
+
+</head>
+<body>
+    <div id="box">
+        <header id="header">
+            <div class="head_1">
+                <a href="recommend.html"><i class="iconfont icon-caidan back"></i></a>
+            </div>
+            <div class="head_2">
+                <!--<div class="song_head" guid="001">
+                    <p>春风十里</p>
+                    <span>鹿先生乐队</span>
+                </div>-->
+
+            </div>
+            <div class="head_3">
+                <a href="#"><i class="iconfont icon-my back"></i></a>
+            </div>
+        </header>
+        <main id="main">
+            <div id="bigImg">
+                 <!--<img class="rotation" src="../images/music_2.jpg">-->
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="bar">
+                <span>0:00============================05:00</span>
+                <input type="range" name="PlayProgress" id="PlayProgress" value="0" onChange="PlayProgress(this.value)">
+            </div>
+            <div class="icon">
+                <i class="iconfont icon-caidan"></i>
+                <i class="iconfont icon-caidan prev"></i>
+                <i>
+                    <i class="iconfont icon-camera start"></i>
+                    <i class="iconfont icon-caidan end"></i>
+                </i>
+                <i class="iconfont icon-caidan next"></i>
+                <i class="iconfont icon-caidan"></i>
+            </div>
+        </footer>
+        <div class="yinyue">
+            <!--<audio id="musicfc" style="width:0;height:0;display:none;">
+                <source src="../music/1.mp3" crossOrigin="anonymous" type="audio/mpeg">
+            </audio>-->
+        </div>
+
+    </div>
+</body>
+</html>

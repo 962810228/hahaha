@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册详情页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="vp">
+    <script type="text/javascript">
+        // // 把尺寸放大N倍（N是window.devicePixelRatio）
+        // var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+        // //物理像素*设备像素比=真实像素
+        // document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+        // // 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+        var scale = 1/window.devicePixelRatio;
+        var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+        document.getElementById("vp").content = mstr;
+    </script>
+    <link rel="stylesheet" href="../CSS/Base.css">
+    <link rel="stylesheet" href="../CSS/reg_con.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/reg_con.js"></script>
+</head>
+<body>
+    <div id="box">
+        <header>
+            <a href="recommend.html"><img src="../images/tubiao.jpg"></a>
+            <!--<i class="bg"></i>-->
+        </header>
+        <main>
+            <div id="reg_1">
+                <label for="user">用户名</label>
+                <input type="text" id="user" name="user" placeholder="4-16位字母、数字或汉字，切勿特殊字符！">
+                <span class="xx"></span>
+                <span class="sp"></span><br>
+                <label for="pass">密码</label>
+                <input type="password" id="pass" name="pass" placeholder="6个字符以上的字母或数字">
+                <span class="xx"></span>
+                <span class="sp"></span><br>
+                <label for="repass">重复密码</label>
+                <input type="password" id="repass" name="repass" placeholder="请重复输入密码确认不会输错">
+                <span class="sp"></span><br>
+                <label for="phone">手机号码</label>
+                <input type="tel" id="phone" name="phone" placeholder="手机号码非常重要，找回密码">
+                <span class="sp"></span><br>
+                <label for="email">邮箱地址</label>
+                <input type="email" id="email" name="email" placeholder="请填写邮箱，用于找回密码">
+                <span class="sp"></span><br>
+                <label for="ver">验证码</label>
+                <input type="text" id="ver" name="ver" class="input-val" value="" placeholder="请输入验证码">
+                <canvas id="canvas" width="100" height="30"></canvas>
+                <span class="sp"></span><br>
+                <label class="clearfix fcheckbox">
+                    <input type="checkbox" class="checkbox">
+                    我已认真阅读并同意  注册用户协议
+                </label><br>
+                <button class="btn" disabled>提交注册</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

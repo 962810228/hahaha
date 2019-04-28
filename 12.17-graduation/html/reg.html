@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="vp">
+    <script type="text/javascript">
+        // // 把尺寸放大N倍（N是window.devicePixelRatio）
+        // var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+        // //物理像素*设备像素比=真实像素
+        // document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+        // // 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+        var scale = 1/window.devicePixelRatio;
+        var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+        document.getElementById("vp").content = mstr;
+    </script>
+    <link rel="stylesheet" href="../CSS/Base.css">
+    <link rel="stylesheet" href="../CSS/reg.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/reg.js"></script>
+</head>
+<body>
+    <div id="box">
+        <header>
+            <a href="recommend.html"><img src="../images/tubiao.jpg"></a>
+            <!--<i class="bg"></i>-->
+        </header>
+        <main>
+            <div id="mid">
+                <a href="log.html"><input type="button" value="登陆"></a>
+                <a href="reg_con.html"><input type="button" value="新用户注册"></a>
+                <a href="#">游客使用</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

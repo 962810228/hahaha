@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="vp">
+    <script type="text/javascript">
+        // // 把尺寸放大N倍（N是window.devicePixelRatio）
+        // var wd = document.documentElement.clientWidth*window.devicePixelRatio/10;
+        // //物理像素*设备像素比=真实像素
+        // document.getElementsByTagName("html")[0].style.fontSize = wd + "px";
+        // // 把屏幕的倍率缩小到N分之一（N是window.devicePixelRatio）
+        var scale = 1/window.devicePixelRatio;
+        var mstr = 'initial-scale='+ scale +', maximum-scale='+ scale +', minimum-scale='+ scale +', user-scalable=no';
+        document.getElementById("vp").content = mstr;
+    </script>
+    <link rel="stylesheet" href="../CSS/Base.css">
+    <link rel="stylesheet" href="../CSS/log.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/log.js"></script>
+</head>
+<body>
+    <div id="box">
+        <header>
+            <div id="tou">
+                <a href="recommend.html"><i class="iconfont icon-caidan back"></i></a>
+            </div>
+            <span>登录</span>
+            <div id="btn">
+                <label for="user">账号</label>
+                <input type="text" id="user" placeholder="账号手机/邮箱">
+                <span class="sp1"></span><br>
+                <label for="pass">密码</label>
+                <input type="text" id="pass" placeholder="请输入密码">
+                <span class="sp2"></span><br>
+                <label class="cbox">
+                    <input type="checkbox" class="checkbox">
+                    下次自动登录
+                </label><br>
+            </div>
+            <input type="button" value="登录" class="log">
+            <div class="bot">
+                <a href="#" class="a1"><span class="for1">忘记密码？</span></a>
+                <a href="reg.html" class="a2"><span class="for2">新用户注册</span></a>
+            </div>
+        </header>
+    </div>
+</body>
+</html>

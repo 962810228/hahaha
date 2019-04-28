@@ -102,6 +102,7 @@ jQuery(function ($)
         submit();
         Magnifier();
     }
+    //放大镜
     function Magnifier()
     {
         var magnify = document.querySelector('.magnify-box');
@@ -174,9 +175,6 @@ jQuery(function ($)
         }
 
     }
-
-
-
 
     //小图与大图的路径jQuery
     function bottom_url()
@@ -278,11 +276,6 @@ jQuery(function ($)
             }
         })
     }
-    submit();
-
-
-    
-    
     
     //检测Cookie是否存在
     function cookie()
