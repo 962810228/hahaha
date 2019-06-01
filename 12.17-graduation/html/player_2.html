@@ -13,7 +13,6 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />-->
 
 
-
     <!-- 字体文件 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
@@ -48,17 +47,22 @@
           <div class="head">
             <div class="head_1">
               <a href="recommend.html">
-                <i class="iconfont icon-caidan "></i>
+                <i class="iconfont icon-fanhui "></i>
               </a>
             </div>
             <div class="head_2">
               <div class="song_head" guid="001">
-                  <p>心做し（Cover GUMI）</p>
-                  <span>双笙</span>
+                  <p>想要和你谈恋爱（Cover：海青）</p>
+                  <span>施佳丽，冷轩</span>
               </div>
             </div>
             <div class="head_3">
-              <a href="#"><i class="iconfont icon-my back"></i></a>
+              <a href="#"><i class="iconfont icon-icon_account detail"></i></a>
+              <div class="detail_more">
+                <p class="px">下载</p>
+                <p class="px">分享</p>
+              </div>
+
             </div>
           </div>
           <div class="block" id="fcmusic">
@@ -76,9 +80,10 @@
                 <i class="fa fa fa-play-circle play"></i>
                 <i class="fa fa-forward play-right"></i>
                 <br /><br />
-                <span class="timer_left">0:00</span>
+                <span class="timer_left"></span>
                 <input type="range" name="PlayProgress" id="PlayProgress" value="0" onChange="PlayProgress(this.value)">
-                <span class="timer_right">5:00</span>
+                <span class="timer_right"></span>
+                <input type="range" id="play_volume"  max="1" min="0" step="0.01">
               </span>
 
               <div class="scale_panel">
@@ -91,12 +96,12 @@
           </div>
           <footer id="footer">
             <ul>
-              <li><a href="recommend.html"><i class="iconfont icon-shouyeshouye"></i><span>发现</span></a></li>
-              <li><a href="player_2.html"><i class="iconfont icon-shouyeshouye"></i><span>我的音乐</span></a></li>
-              <li class="middle"><a href="#"><i class="iconfont icon-camera"></i></a></li>
+              <li><a href="recommend.html"><i class="iconfont icon-dianli"></i><span>发现</span></a></li>
+              <li><a href="player_2.html"><i class="iconfont icon-yinle"></i><span>我的音乐</span></a></li>
+              <li class="middle"><a href="#"><i class="iconfont icon-yinlex"></i></a></li>
               <li><a href="#"><i ></i></a></li>
-              <li><a href="#"><i class="iconfont icon-my"></i><span>动态</span></a></li>
-              <li><a href="#" class="transfer"><i class="iconfont icon-my back"></i><span>账号</span></a></li>
+              <li><a href="#"><i class="iconfont icon-duihuakuang"></i><span>动态</span></a></li>
+              <li><a href="#" class="transfer"><i class="iconfont icon-icon_account back"></i><span>账号</span></a></li>
             </ul>
           </footer>
         </div>
@@ -114,6 +119,60 @@
 	<!--json调用 音乐歌单歌词同步-->
     <script>
 	    var musicJson =[
+            {"title":"想要和你谈恋爱（Cover：海青）",
+                "author":"施佳丽，冷轩",
+                "pic":"http://p2.music.126.net/rFXIKSkKGfrBeH4CskEMyw==/109951163516374574.jpg?param=200x200",
+                "url":"https://api.mlwei.com/music/api/wy/?key=523077333&cache=1&type=url&id=1305345331",
+                "lyc":"[00:00.00] 作曲 : 无\n" +
+                    "[00:00.05] 作词 : 无\n" +
+                    "[00:00.17]想要和你谈恋爱\n" +
+                    "[00:01.82]作词：潘攀\n" +
+                    "[00:02.08]作曲：潘攀\n" +
+                    "[00:03.29]编曲：尤起胜\n" +
+                    "[00:03.45]录音：郭延跃\n" +
+                    "[00:03.70]吉他：田超\n" +
+                    "[00:03.96]缩混：田超\n" +
+                    "[00:04.74]制作人：潘攀\n" +
+                    "[00:20.67]第一次见你 微妙的感觉\n" +
+                    "[00:25.25]空气都凝结 心慌乱跳跃\n" +
+                    "[00:29.86]微风在摇曳 甜蜜的季节\n" +
+                    "[00:34.46]你缓缓走来 我无法拒绝\n" +
+                    "[00:38.05]我想要和你谈恋爱\n" +
+                    "[00:40.61]这算不算表白\n" +
+                    "[00:42.70]想要拉着你的手\n" +
+                    "[00:45.59]再也不放开\n" +
+                    "[00:47.41]我想要和你谈恋爱\n" +
+                    "[00:49.87]我不想在等待\n" +
+                    "[00:51.86]想要和你去看海\n" +
+                    "[00:54.37]看花谢花开\n" +
+                    "[00:56.99]嗒 嗒嗒 嗒嗒嗒嗒嗒嗒嗒\n" +
+                    "[01:01.82]嗒 嗒嗒 嗒嗒嗒嗒嗒\n" +
+                    "[01:06.37]嗒 嗒嗒 嗒嗒嗒嗒嗒嗒嗒\n" +
+                    "[01:10.94]嗒 嗒嗒 嗒嗒嗒嗒嗒\n" +
+                    "[01:34.56]第一次见你 微妙的感觉\n" +
+                    "[01:39.12]空气都凝结 心慌乱跳跃\n" +
+                    "[01:43.14]微风在摇曳 甜蜜的季节\n" +
+                    "[01:48.35]你缓缓走来 我无法拒绝\n" +
+                    "[01:51.94]我想要和你谈恋爱\n" +
+                    "[01:54.55]这算不算表白\n" +
+                    "[01:56.44]想要拉着你的手\n" +
+                    "[01:58.90]再也不放开\n" +
+                    "[02:01.16]我想要和你谈恋爱\n" +
+                    "[02:03.66]我不想在等待\n" +
+                    "[02:05.70]想要和你去看海\n" +
+                    "[02:08.21]看花谢花开\n" +
+                    "[02:28.95]我想要和你谈恋爱\n" +
+                    "[02:31.45]这算不算表白\n" +
+                    "[02:33.44]想要拉着你的手\n" +
+                    "[02:35.96]再也不放开\n" +
+                    "[02:38.06]我想要和你谈恋爱\n" +
+                    "[02:40.61]我不想在等待\n" +
+                    "[02:42.60]想要和你去看海\n" +
+                    "[02:45.21]看花谢花开\n" +
+                    "[02:47.42]嗒 嗒嗒 嗒嗒嗒嗒嗒嗒嗒\n" +
+                    "[02:52.41]嗒 嗒嗒 嗒嗒嗒嗒嗒\n" +
+                    "[02:56.92]嗒 嗒嗒 嗒嗒嗒嗒嗒嗒嗒\n" +
+                    "[03:01.64]嗒 嗒嗒 嗒嗒嗒嗒嗒"},
 	        {"title":"\u5fc3\u505a\u3057\uff08Cover GUMI\uff09",
                 "author":"\u53cc\u7b19",
                 "pic":"https:\/\/p2.music.126.net\/uwF73BxhvWiR-Kxn0wGe0g==\/109951162927951204.jpg?param=200y200",
@@ -122,7 +181,8 @@
             {"title":"Aloha Heja He",
                 "author":"Achim Reichel",
                 "pic":"https:\/\/p1.music.126.net\/gsMVQpoHD-Xxwf6rAMe0hQ==\/7841716930181485.jpg?param=200y200",
-                "url":"https:\/\/music.163.com\/song\/media\/outer\/url?id=32337953.mp3","lyc":"[by:\u84dd\u84dd\u7490\u6559\u4e3b]\n[ti:]\n[ar:]\n[al:]\n[by:\u4e5d\u4e5dLrc\u6b4c\u8bcd\u7f51\uff5ewww.99Lrc.net]\n[00:18.93]Hab' die ganze Welt geseh'n\n[00:22.72]Von Singapur bis Aberdeen\n[00:27.38]Wenn du mich fragst wo's am sch?nsten war\n[00:31.85]Sag' ich Sansibar!\n[00:36.19]Es war 'ne harte \u00fcberfahrt \u2013\n[00:40.29]Zehn Wochen nur das Deck geschrubbt\n[00:44.03]Hab' die Welt verflucht\n[00:46.04]In den Wind gespuckt\n[00:49.81]Und salziges Wasser geschluckt!\n[01:02.18]Als wir den Anker warfen war es himmlische Ruh'\n[01:06.00]Und die Sonne stand senkrecht am Himmel\n[01:10.47]Als ich \u00fcber die Reeling sah\n[01:11.51]Da glaubte ich zu tr?umen \u2013\n[01:14.46]Da war'n tausend Boote und sie hielten auf uns zu!\n[01:19.57]In den Booten waren M?nner und Frau'n\n[01:23.58]Ihre Leiber gl?nzten in der Sonne\n[01:27.66]Und sie sangen ein Lied\n[01:29.81]Das kam mir seltsam bekannt vor\n[01:32.36]Aber so hab' ich's noch nie geh?rt\n[01:35.99]Uhhhh, so hab' ich's noch nie geh?rt!\n[01:41.19]Aloha heja he \u2013 aloha heja he, aloha heja he\n[01:49.60]Aloha heja he \u2013 aloha heja he, aloha heja he\n[01:58.69]Ihre Boote machten l?ngsseits fest\n[02:02.39]Und mit dem Wind wehte Gel?chter her\u00fcber\n[02:07.09]Sie nahmen ihre Blumenkr?nze ab\n[02:10.83]Und warfen sie zu uns her\u00fcber\n[02:14.70]Hehhhh, und schon war die Party im Gange!\n[02:20.14]Aloha heja he \u2013 aloha heja he, aloha heja he\n[02:28.87]Aloha heja he \u2013 aloha heja he, aloha heja he\n[02:46.26]Ich hab' das Paradies geseh'n\n[02:50.36]Es war um neunzehnhundertzehn!\n[02:54.96]Der Steuermann hatte Matrosen am Mast\n[02:58.69]Und den Zahlmeister ha'm die Gonokokken vernascht \u2013\n[03:03.39]Aber sonst war'n wir bei bester Gesundheit!\n[03:07.69]Aloha heja he \u2013 aloha heja he, aloha heja he\n[03:16.18]Aloha heja he \u2013 aloha heja he, aloha heja he\n[03:25.11]Aloha heja he \u2013 aloha heja he, aloha heja he\n[03:33.70]Aloha heja he \u2013 aloha heja he, aloha heja he\n[03:42.33]Aloha heja he \u2013 aloha heja he, aloha heja he\n[03:50.86]Aloha heja he \u2013 aloha heja he, aloha heja . . .\n"},{"title":"RTRT","author":"Mili","pic":"https:\/\/p1.music.126.net\/-OxCLbGs-JxKtPaBCo1yuw==\/18801648835570109.jpg?param=200y200","url":"https:\/\/music.163.com\/song\/media\/outer\/url?id=435005006.mp3","lyc":"[by:\u5c0f\u9640\u87baTony]\n[00:29.33]Hop hop\n[00:30.77]You came along my secret laboratory\n[00:36.50]Spiky spiky bloody fangs hungry for my Qi\n[00:43.77]Hold up, mister\n[00:45.71]Right there, mister\n[00:47.25]Sit down, mister\n[00:48.89]How about some retort pouch of curry\n[00:52.94]Pouch of chili\n[00:54.68]Pouch of MRE\n[00:56.52]But you're rather picky\n[00:58.71]\n[01:00.31]Well\n[01:00.80]I'll make you something else\n[01:02.30]Don't need to show me how\n[01:03.84]Since I'm the mad scientist, proclaimed by myself\n[01:07.92]Canton or Sichuan\n[01:09.61]Jiangsu or Hunan\n[01:11.28]No matter which one you pick I'll get it done\n[01:14.76]Zhajiangmian and Xiaolongbao\n[01:16.80]Wonton and Chashao\n[01:18.54]Delivery or takeout won't beat my retort pouch\n[01:20.69]You're loving my retort\n[01:24.13]I'm loving your retort\n[01:25.87]You're my only retort\n[01:27.81]You're my only retort\n[01:30.05]\u4e00 \u4e00 \u4e00 \u4e8c \u4e00 \u4e00 \u4e8c \u4e09 \u56db \u4e94 \u516d \u4e03\n[01:36.62]\u4e00 \u4e00 \u4e00 \u4e8c \u4e00 \u4e00 \u4e8c \u4e09 \u56db \u4e94 \u516d \u4e03\n[01:43.79]\n[01:44.03]Crack crack\n[01:45.13]You stretch your arms out asking for a hug\n[01:50.50]Hidden under your talisman is your practiced smile\n[01:58.51]Come here, mister\n[02:00.01]Help me, mister\n[02:01.65]Right here, mister\n[02:03.49]You took up my spoon\n[02:05.53]Stirring curry\n[02:06.92]Stirring chili\n[02:08.83]That's when I've realized\n[02:10.97]We've became family\n[02:12.26]\n[02:13.82]Then he came\n[02:16.91]A man in black and white\n[02:18.30]He's holding laser guns and Bagua signs\n[02:28.45]Then he aimed at your slimy skin\n[02:33.28]And pulled the trigger\n[02:38.86]Your head bursts\n[02:42.54]Shh\n[02:44.63]\n[02:45.43]I'll stitch you back up\n[02:47.28]Don't need to show me how\n[02:48.87]Since I'm the mad scientist, proclaimed by myself\n[02:52.26]I'll give you plastic eyes\n[02:53.90]And give you nylon hair\n[02:55.74]And I'll make sure Iget your talisman repaired\n[02:59.08]Shark fin soup or Dim sum\n[03:01.17]Dumpling or Peking duck\n[03:03.01]Nothing I make is gonna bring that charm inside you back\n[03:07.16]But you're still my RTRT\n[03:08.85]But you're still my RTRT\n[03:10.54]I'm seeking for RTRT\n[03:12.43]I'm seeking for RTRT\n"},
+                "url":"https:\/\/music.163.com\/song\/media\/outer\/url?id=32337953.mp3",
+                "lyc":"[by:\u84dd\u84dd\u7490\u6559\u4e3b]\n[ti:]\n[ar:]\n[al:]\n[by:\u4e5d\u4e5dLrc\u6b4c\u8bcd\u7f51\uff5ewww.99Lrc.net]\n[00:18.93]Hab' die ganze Welt geseh'n\n[00:22.72]Von Singapur bis Aberdeen\n[00:27.38]Wenn du mich fragst wo's am sch?nsten war\n[00:31.85]Sag' ich Sansibar!\n[00:36.19]Es war 'ne harte \u00fcberfahrt \u2013\n[00:40.29]Zehn Wochen nur das Deck geschrubbt\n[00:44.03]Hab' die Welt verflucht\n[00:46.04]In den Wind gespuckt\n[00:49.81]Und salziges Wasser geschluckt!\n[01:02.18]Als wir den Anker warfen war es himmlische Ruh'\n[01:06.00]Und die Sonne stand senkrecht am Himmel\n[01:10.47]Als ich \u00fcber die Reeling sah\n[01:11.51]Da glaubte ich zu tr?umen \u2013\n[01:14.46]Da war'n tausend Boote und sie hielten auf uns zu!\n[01:19.57]In den Booten waren M?nner und Frau'n\n[01:23.58]Ihre Leiber gl?nzten in der Sonne\n[01:27.66]Und sie sangen ein Lied\n[01:29.81]Das kam mir seltsam bekannt vor\n[01:32.36]Aber so hab' ich's noch nie geh?rt\n[01:35.99]Uhhhh, so hab' ich's noch nie geh?rt!\n[01:41.19]Aloha heja he \u2013 aloha heja he, aloha heja he\n[01:49.60]Aloha heja he \u2013 aloha heja he, aloha heja he\n[01:58.69]Ihre Boote machten l?ngsseits fest\n[02:02.39]Und mit dem Wind wehte Gel?chter her\u00fcber\n[02:07.09]Sie nahmen ihre Blumenkr?nze ab\n[02:10.83]Und warfen sie zu uns her\u00fcber\n[02:14.70]Hehhhh, und schon war die Party im Gange!\n[02:20.14]Aloha heja he \u2013 aloha heja he, aloha heja he\n[02:28.87]Aloha heja he \u2013 aloha heja he, aloha heja he\n[02:46.26]Ich hab' das Paradies geseh'n\n[02:50.36]Es war um neunzehnhundertzehn!\n[02:54.96]Der Steuermann hatte Matrosen am Mast\n[02:58.69]Und den Zahlmeister ha'm die Gonokokken vernascht \u2013\n[03:03.39]Aber sonst war'n wir bei bester Gesundheit!\n[03:07.69]Aloha heja he \u2013 aloha heja he, aloha heja he\n[03:16.18]Aloha heja he \u2013 aloha heja he, aloha heja he\n[03:25.11]Aloha heja he \u2013 aloha heja he, aloha heja he\n[03:33.70]Aloha heja he \u2013 aloha heja he, aloha heja he\n[03:42.33]Aloha heja he \u2013 aloha heja he, aloha heja he\n[03:50.86]Aloha heja he \u2013 aloha heja he, aloha heja . . .\n"},{"title":"RTRT","author":"Mili","pic":"https:\/\/p1.music.126.net\/-OxCLbGs-JxKtPaBCo1yuw==\/18801648835570109.jpg?param=200y200","url":"https:\/\/music.163.com\/song\/media\/outer\/url?id=435005006.mp3","lyc":"[by:\u5c0f\u9640\u87baTony]\n[00:29.33]Hop hop\n[00:30.77]You came along my secret laboratory\n[00:36.50]Spiky spiky bloody fangs hungry for my Qi\n[00:43.77]Hold up, mister\n[00:45.71]Right there, mister\n[00:47.25]Sit down, mister\n[00:48.89]How about some retort pouch of curry\n[00:52.94]Pouch of chili\n[00:54.68]Pouch of MRE\n[00:56.52]But you're rather picky\n[00:58.71]\n[01:00.31]Well\n[01:00.80]I'll make you something else\n[01:02.30]Don't need to show me how\n[01:03.84]Since I'm the mad scientist, proclaimed by myself\n[01:07.92]Canton or Sichuan\n[01:09.61]Jiangsu or Hunan\n[01:11.28]No matter which one you pick I'll get it done\n[01:14.76]Zhajiangmian and Xiaolongbao\n[01:16.80]Wonton and Chashao\n[01:18.54]Delivery or takeout won't beat my retort pouch\n[01:20.69]You're loving my retort\n[01:24.13]I'm loving your retort\n[01:25.87]You're my only retort\n[01:27.81]You're my only retort\n[01:30.05]\u4e00 \u4e00 \u4e00 \u4e8c \u4e00 \u4e00 \u4e8c \u4e09 \u56db \u4e94 \u516d \u4e03\n[01:36.62]\u4e00 \u4e00 \u4e00 \u4e8c \u4e00 \u4e00 \u4e8c \u4e09 \u56db \u4e94 \u516d \u4e03\n[01:43.79]\n[01:44.03]Crack crack\n[01:45.13]You stretch your arms out asking for a hug\n[01:50.50]Hidden under your talisman is your practiced smile\n[01:58.51]Come here, mister\n[02:00.01]Help me, mister\n[02:01.65]Right here, mister\n[02:03.49]You took up my spoon\n[02:05.53]Stirring curry\n[02:06.92]Stirring chili\n[02:08.83]That's when I've realized\n[02:10.97]We've became family\n[02:12.26]\n[02:13.82]Then he came\n[02:16.91]A man in black and white\n[02:18.30]He's holding laser guns and Bagua signs\n[02:28.45]Then he aimed at your slimy skin\n[02:33.28]And pulled the trigger\n[02:38.86]Your head bursts\n[02:42.54]Shh\n[02:44.63]\n[02:45.43]I'll stitch you back up\n[02:47.28]Don't need to show me how\n[02:48.87]Since I'm the mad scientist, proclaimed by myself\n[02:52.26]I'll give you plastic eyes\n[02:53.90]And give you nylon hair\n[02:55.74]And I'll make sure Iget your talisman repaired\n[02:59.08]Shark fin soup or Dim sum\n[03:01.17]Dumpling or Peking duck\n[03:03.01]Nothing I make is gonna bring that charm inside you back\n[03:07.16]But you're still my RTRT\n[03:08.85]But you're still my RTRT\n[03:10.54]I'm seeking for RTRT\n[03:12.43]I'm seeking for RTRT\n"},
             {"title":"\u7ea2\u662d\u613f",
                 "author":"\u97f3\u9619\u8bd7\u542c",
                 "pic":"https:\/\/p1.music.126.net\/8ltR3o9R8uJ9_5Cc71cDhA==\/109951162951242154.jpg?param=200y200",
@@ -258,7 +318,13 @@
                 "author":"\u4e50\u6b63\u7eeb",
                 "pic":"https:\/\/p1.music.126.net\/vkoQqphGwk6TyRFai3ZBdw==\/3238061743857732.jpg?param=200y200",
                 "url":"https:\/\/music.163.com\/song\/media\/outer\/url?id=34923851.mp3",
-                "lyc":"[by:Eosin\u66f2\u745e]\n[00:10.32]\u8749\u65f6\u96e8 \u5316\u6210\u6de1\u58a8\u6e32\u67d3\u66ae\u8272\n[00:15.41]\u6e17\u900f\u7740 \u52fe\u52d2\u51fa\u8db3\u8ff9\u4e0e\u8f66\u8f99\n[00:20.63]\u6b22\u7b11\u58f0 \u4e0e\u6f02\u6d6e\u7684\u6c34\u6c7d\u9971\u548c\n[00:25.61]\u9694\u7740\u7a97 \u540c\u57ce\u5e02\u4e00\u5e76\u6a21\u7cca\u4e86\n[00:30.74]\u62e8\u5f04\u7740 \u65e7\u5409\u4ed6 \u54fc\u7740\u56db\u62cd\u5b50\u7684\u6b4c\n[00:35.88]\u56de\u97f3\u4e2d \u4e00\u4e2a\u4eba \u4eff\u4f5b\u9887\u60a0\u7136\u81ea\u5f97\n[00:40.96]\u7b49\u51c9\u96e8 \u7684\u6e29\u5ea6 \u5c06\u4e0d\u5b89\u71e5\u70ed\u4e2d\u548c\n[00:46.04]\u5bfb\u89c5\u7740 \u98ce\u7684\u6ce2\u6298\n[00:50.32]\u6211\u4ecd\u7136\u5728\u65e0\u4eba\u95ee\u6d25\u7684\u9634\u96e8\u9709\u6e7f\u4e4b\u5730\n[00:55.28]\u548c\u7740\u96e8\u97f3 \u5531\u7740\u6ca1\u6709\u542c\u4f17\u7684\u6b4c\u66f2\n[01:00.30]\u4eba\u6f6e\u4ecd\u662f\u6f2b\u65e0\u76ee\u7684\u5730\u5411\u76ee\u7684\u5730\u6563\u53bb\n[01:06.00]\u5fd9\u788c\u7740 \u65e0\u4e3a\u7740 \u7ee7\u7eed\n[01:10.58]\u7b49\u5f85\u7740\u8c01\u80fd\u591f\u5c06\u6211\u7684\u5fc3\u623f\u8f7b\u8f7b\u53e9\u51fb\n[01:15.63]\u5373\u4f7f\u662f\u4f60 \u4e5f\u4ec5\u4ec5\u9a7b\u8db3\u4e86\u7247\u523b\u4fbf\u79bb\u53bb\n[01:20.92]\u60f3\u7740\u6216\u8bb8 \u4e0b\u4e2a\u8def\u53e3\u4f1a\u6709\u8c01\u4e0e\u6211\u76f8\u9047\n[01:26.52]\u54ea\u6015\u53ea \u4e00\u77ac\u7684 \u5947\u8ff9\n[01:34.99]\u66f2\/\u8bcd\/\u7f16\/\u8c03\uff1aCOP\n[01:39.03]\n[01:52.38]\u590f\u591c\u7a7a \u51fa\u73b0\u5728\u9065\u8fdc\u7684\u7684\u8bb0\u5fc6\n[01:57.51]\u7efd\u653e\u7684 \u7480\u74a8\u82b1\u706b\u62e5\u7740\u7e41\u661f\n[02:02.51]\u6d88\u5931\u524d \u505a\u51fa\u6700\u6e29\u67d4\u7684\u7ed9\u4e88\n[02:07.70]\u4e00\u5982\u90a3\u4e9b\u6a21\u7cca\u8eab\u5f71\u7684\u522b\u79bb\n[02:12.72]\u56f0\u60d1\u5730 \u62d8\u675f\u7740 \u5982\u57ce\u5e02\u6c60\u4e2d\u4e4b\u9c7c\n[02:17.90]\u6216\u54fd\u54bd \u6216\u4f4e\u6ce3 \u90fd\u878d\u8fdb\u4e86\u6ce1\u6cab\u91cc\n[02:22.94]\u62d6\u66f3\u75b2\u60eb\u8eab\u8eaf \u6c89\u5165\u51b0\u51b7\u7684\u6c60\u5e95\n[02:28.16]\u6ce8\u89c6\u7740 \u8272\u5f69\u892a\u53bb\n[02:32.32]\u6211\u4ecd\u7136\u5728\u65e0\u4eba\u95ee\u6d25\u7684\u9634\u96e8\u9709\u6e7f\u4e4b\u5730\n[02:37.39]\u548c\u7740\u96e8\u97f3 \u5531\u7740\u6ca1\u6709\u542c\u4f17\u7684\u6b4c\u66f2\n[02:42.49]\u4eba\u6f6e\u4ecd\u662f\u6f2b\u65e0\u76ee\u7684\u5730\u5411\u76ee\u7684\u5730\u6563\u53bb\n[02:48.13]\u5fd9\u788c\u7740 \u65e0\u4e3a\u7740 \u7ee7\u7eed\n[02:52.59]\u7b49\u5f85\u7740\u8c01\u80fd\u591f\u5c06\u6211\u7684\u5fc3\u623f\u8f7b\u8f7b\u53e9\u51fb\n[02:57.84]\u5373\u4f7f\u662f\u4f60 \u4e5f\u4ec5\u4ec5\u9a7b\u8db3\u4e86\u7247\u523b\u4fbf\u79bb\u53bb\n[03:02.97]\u60f3\u7740\u6216\u8bb8 \u4e0b\u4e2a\u8def\u53e3\u4f1a\u6709\u8c01\u4e0e\u6211\u76f8\u9047\n[03:08.57]\u54ea\u6015\u53ea \u4e00\u77ac\u7684 \u5947\u8ff9\n[03:14.93]\u6781\u591c\u4e0e\u6c38\u663c\n[03:20.25]\u522b\u79bb\u4e0e\u6b22\u805a\n[03:25.29]\u8109\u640f\u4e0e\u547c\u5438\n[03:30.40]\u627e\u5bfb\u7740\u610f\u4e49\n[03:36.62]\u6211\u4ecd\u7136\u5728\u65e0\u4eba\u95ee\u6d25\u7684\u9634\u96e8\u9709\u6e7f\u4e4b\u5730\n[03:41.31]\u548c\u7740\u96e8\u97f3 \u5531\u7740\u5356\u4e0d\u51fa\u53bb\u7684\u6b4c\u66f2\n[03:46.47]\u6d6e\u6e38\u4e4b\u4eba\u4e5f\u6323\u624e\u4e0d\u5df2\u6267\u7740\u5b58\u5728\u4e0b\u53bb\n[03:52.06]\u8ffd\u9010\u7740 \u68a6\u60f3\u7740 \u7ee7\u7eed\n[03:56.47]\u8bf7\u522b\u8ba9\u6211\u72ec\u81ea\u530d\u5310\u4e8e\u6ec2\u6cb1\u4e16\u672b\u4e4b\u96e8\n[04:01.66]\u548c\u7740\u96e8\u97f3 \u5531\u7740\u89c1\u8bc1\u7ec8\u7ed3\u7684\u6b4c\u66f2\n[04:06.93]\u4eba\u4eec\u7ec8\u4e8e \u7ed3\u675f\u4e86\u5bfb\u89c5\u5446\u6ede\u4f2b\u7acb\u539f\u5730\n[04:12.44]\u54ed\u6ce3\u7740 \u4e5e\u6c42\u7740 \u5947\u8ff9\n[04:17.25]\u7528\u8fd9\u53cc\u624b \u62e8\u51fa\u6b8b\u7f3a\u67d3\u4e86\u9508\u8ff9\u7684\u5f26\u97f3\n[04:22.06]\u90fd\u9690\u6ca1\u4e8e\u6dcb\u6f13\u7684\u96e8\u5e55\u65e0\u58f0\u65e0\u606f\n[04:27.16]\u66f2\u7ec8\u4e4b\u65f6 \u4f60\u662f\u5426\u4fbf\u4f1a\u56de\u5e94\u6211\u7684\u5fc3\u97f3\n[04:32.74]\u5c06\u98a4\u6296\u7684\u53cc\u624b\u7275\u8d77\n[04:38.04]\u8fce\u6765\u6bcf\u4e2a\u4eba\u7684\u7ed3\u5c40\n[04:43.87]\n"}];
+                "lyc":"[by:Eosin\u66f2\u745e]\n[00:10.32]\u8749\u65f6\u96e8 \u5316\u6210\u6de1\u58a8\u6e32\u67d3\u66ae\u8272\n[00:15.41]\u6e17\u900f\u7740 \u52fe\u52d2\u51fa\u8db3\u8ff9\u4e0e\u8f66\u8f99\n[00:20.63]\u6b22\u7b11\u58f0 \u4e0e\u6f02\u6d6e\u7684\u6c34\u6c7d\u9971\u548c\n[00:25.61]\u9694\u7740\u7a97 \u540c\u57ce\u5e02\u4e00\u5e76\u6a21\u7cca\u4e86\n[00:30.74]\u62e8\u5f04\u7740 \u65e7\u5409\u4ed6 \u54fc\u7740\u56db\u62cd\u5b50\u7684\u6b4c\n[00:35.88]\u56de\u97f3\u4e2d \u4e00\u4e2a\u4eba \u4eff\u4f5b\u9887\u60a0\u7136\u81ea\u5f97\n[00:40.96]\u7b49\u51c9\u96e8 \u7684\u6e29\u5ea6 \u5c06\u4e0d\u5b89\u71e5\u70ed\u4e2d\u548c\n[00:46.04]\u5bfb\u89c5\u7740 \u98ce\u7684\u6ce2\u6298\n[00:50.32]\u6211\u4ecd\u7136\u5728\u65e0\u4eba\u95ee\u6d25\u7684\u9634\u96e8\u9709\u6e7f\u4e4b\u5730\n[00:55.28]\u548c\u7740\u96e8\u97f3 \u5531\u7740\u6ca1\u6709\u542c\u4f17\u7684\u6b4c\u66f2\n[01:00.30]\u4eba\u6f6e\u4ecd\u662f\u6f2b\u65e0\u76ee\u7684\u5730\u5411\u76ee\u7684\u5730\u6563\u53bb\n[01:06.00]\u5fd9\u788c\u7740 \u65e0\u4e3a\u7740 \u7ee7\u7eed\n[01:10.58]\u7b49\u5f85\u7740\u8c01\u80fd\u591f\u5c06\u6211\u7684\u5fc3\u623f\u8f7b\u8f7b\u53e9\u51fb\n[01:15.63]\u5373\u4f7f\u662f\u4f60 \u4e5f\u4ec5\u4ec5\u9a7b\u8db3\u4e86\u7247\u523b\u4fbf\u79bb\u53bb\n[01:20.92]\u60f3\u7740\u6216\u8bb8 \u4e0b\u4e2a\u8def\u53e3\u4f1a\u6709\u8c01\u4e0e\u6211\u76f8\u9047\n[01:26.52]\u54ea\u6015\u53ea \u4e00\u77ac\u7684 \u5947\u8ff9\n[01:34.99]\u66f2\/\u8bcd\/\u7f16\/\u8c03\uff1aCOP\n[01:39.03]\n[01:52.38]\u590f\u591c\u7a7a \u51fa\u73b0\u5728\u9065\u8fdc\u7684\u7684\u8bb0\u5fc6\n[01:57.51]\u7efd\u653e\u7684 \u7480\u74a8\u82b1\u706b\u62e5\u7740\u7e41\u661f\n[02:02.51]\u6d88\u5931\u524d \u505a\u51fa\u6700\u6e29\u67d4\u7684\u7ed9\u4e88\n[02:07.70]\u4e00\u5982\u90a3\u4e9b\u6a21\u7cca\u8eab\u5f71\u7684\u522b\u79bb\n[02:12.72]\u56f0\u60d1\u5730 \u62d8\u675f\u7740 \u5982\u57ce\u5e02\u6c60\u4e2d\u4e4b\u9c7c\n[02:17.90]\u6216\u54fd\u54bd \u6216\u4f4e\u6ce3 \u90fd\u878d\u8fdb\u4e86\u6ce1\u6cab\u91cc\n[02:22.94]\u62d6\u66f3\u75b2\u60eb\u8eab\u8eaf \u6c89\u5165\u51b0\u51b7\u7684\u6c60\u5e95\n[02:28.16]\u6ce8\u89c6\u7740 \u8272\u5f69\u892a\u53bb\n[02:32.32]\u6211\u4ecd\u7136\u5728\u65e0\u4eba\u95ee\u6d25\u7684\u9634\u96e8\u9709\u6e7f\u4e4b\u5730\n[02:37.39]\u548c\u7740\u96e8\u97f3 \u5531\u7740\u6ca1\u6709\u542c\u4f17\u7684\u6b4c\u66f2\n[02:42.49]\u4eba\u6f6e\u4ecd\u662f\u6f2b\u65e0\u76ee\u7684\u5730\u5411\u76ee\u7684\u5730\u6563\u53bb\n[02:48.13]\u5fd9\u788c\u7740 \u65e0\u4e3a\u7740 \u7ee7\u7eed\n[02:52.59]\u7b49\u5f85\u7740\u8c01\u80fd\u591f\u5c06\u6211\u7684\u5fc3\u623f\u8f7b\u8f7b\u53e9\u51fb\n[02:57.84]\u5373\u4f7f\u662f\u4f60 \u4e5f\u4ec5\u4ec5\u9a7b\u8db3\u4e86\u7247\u523b\u4fbf\u79bb\u53bb\n[03:02.97]\u60f3\u7740\u6216\u8bb8 \u4e0b\u4e2a\u8def\u53e3\u4f1a\u6709\u8c01\u4e0e\u6211\u76f8\u9047\n[03:08.57]\u54ea\u6015\u53ea \u4e00\u77ac\u7684 \u5947\u8ff9\n[03:14.93]\u6781\u591c\u4e0e\u6c38\u663c\n[03:20.25]\u522b\u79bb\u4e0e\u6b22\u805a\n[03:25.29]\u8109\u640f\u4e0e\u547c\u5438\n[03:30.40]\u627e\u5bfb\u7740\u610f\u4e49\n[03:36.62]\u6211\u4ecd\u7136\u5728\u65e0\u4eba\u95ee\u6d25\u7684\u9634\u96e8\u9709\u6e7f\u4e4b\u5730\n[03:41.31]\u548c\u7740\u96e8\u97f3 \u5531\u7740\u5356\u4e0d\u51fa\u53bb\u7684\u6b4c\u66f2\n[03:46.47]\u6d6e\u6e38\u4e4b\u4eba\u4e5f\u6323\u624e\u4e0d\u5df2\u6267\u7740\u5b58\u5728\u4e0b\u53bb\n[03:52.06]\u8ffd\u9010\u7740 \u68a6\u60f3\u7740 \u7ee7\u7eed\n[03:56.47]\u8bf7\u522b\u8ba9\u6211\u72ec\u81ea\u530d\u5310\u4e8e\u6ec2\u6cb1\u4e16\u672b\u4e4b\u96e8\n[04:01.66]\u548c\u7740\u96e8\u97f3 \u5531\u7740\u89c1\u8bc1\u7ec8\u7ed3\u7684\u6b4c\u66f2\n[04:06.93]\u4eba\u4eec\u7ec8\u4e8e \u7ed3\u675f\u4e86\u5bfb\u89c5\u5446\u6ede\u4f2b\u7acb\u539f\u5730\n[04:12.44]\u54ed\u6ce3\u7740 \u4e5e\u6c42\u7740 \u5947\u8ff9\n[04:17.25]\u7528\u8fd9\u53cc\u624b \u62e8\u51fa\u6b8b\u7f3a\u67d3\u4e86\u9508\u8ff9\u7684\u5f26\u97f3\n[04:22.06]\u90fd\u9690\u6ca1\u4e8e\u6dcb\u6f13\u7684\u96e8\u5e55\u65e0\u58f0\u65e0\u606f\n[04:27.16]\u66f2\u7ec8\u4e4b\u65f6 \u4f60\u662f\u5426\u4fbf\u4f1a\u56de\u5e94\u6211\u7684\u5fc3\u97f3\n[04:32.74]\u5c06\u98a4\u6296\u7684\u53cc\u624b\u7275\u8d77\n[04:38.04]\u8fce\u6765\u6bcf\u4e2a\u4eba\u7684\u7ed3\u5c40\n[04:43.87]\n"},
+            {"title":"sunrise",
+                "author":"catie mckinney",
+                "pic":"../images/music_1.jpg",
+                "url":"../music/1.mp3",
+                "lyc":""},
+          ];
 	</script>
     <script src="../js/music.js?v=1.0" type="text/javascript"></script>
 	

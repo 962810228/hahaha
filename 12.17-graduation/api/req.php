@@ -48,7 +48,7 @@ if ($code == 2)//请求注册判断用户名是否相同
     }
 }
 //$code=3;$user="lemonsss";$pass="123456";$phone="13622864048";$email="962810228@qq.com";
-if ($code == 3)//注册成功时用户信息添加到user表并创建购用户物车表
+if ($code == 3)//注册成功时用户信息添加到user表并创建个人用户表
 {
     $sql = "insert into user values ('$user','$pass','$phone','$email')";
     if ($con->query($sql))

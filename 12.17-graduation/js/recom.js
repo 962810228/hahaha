@@ -26,7 +26,7 @@ jQuery(function ($)
         console.log(liWidth);
         //2.每个一秒索引+1，实现轮播
 
-        focus.timer=setInterval(autoplay,1800);
+        focus.timer=setInterval(autoplay,2500);
 
         //3.当鼠标移入focus，停止定时器
         focus.onmouseover=function ()
@@ -175,8 +175,5 @@ jQuery(function ($)
             },2000)
         }
     })
-    
-    
-
 
 })

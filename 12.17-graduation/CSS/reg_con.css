@@ -23,10 +23,11 @@ html,body{height: 100%;width: 100%;background: #DFE0DB;}
 #box main #reg_1 #canvas{width: 300px;margin-left: 60px;height: 100px;cursor: pointer;
             vertical-align: middle;box-sizing: border-box;border: 1px solid #ddd;
             background: white;font-size: 40px;line-height: 100px;}
-#box main #reg_1 span{font-size: 30px;color: red}
+#box main #reg_1 span:not(.zhuce){font-size: 30px;color: red}
 
 #box main #reg_1 .fcheckbox{display: inline-block;width: 800px;font-size: 30px;}
 #box main #reg_1 .fcheckbox input{width: 30px;height: 30px;margin-left: 150px;}
+#box main #reg_1 .fcheckbox .zhuce{text-decoration: underline;line-height: 35px;}
 
 #box main #reg_1 button
         {width: 300px;height: 120px;background-color: #a94442;border: none;

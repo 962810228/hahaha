@@ -11,7 +11,7 @@ currentnum = 0,
 currentTime = 0,
 lycArray = new Array();
 
-//创建歌词数组存放JSON
+//创建歌词数组存放JSON,处理歌词字符串进行同步
 function createLrc(lycText)
 {
     lycArray = new Array();
@@ -20,19 +20,22 @@ function createLrc(lycText)
         return false;
     }
     var lycs = new Array();
+    //分割成多个数组
     var medises = medis.split("\n");
-    $.each(medises,
-    function(i, item)
+    console.log(medises);
+    $.each(medises, function(i, item)
     {
+        //t为获取的处理后的时间戳  c为处理后的歌词
         var t = item.substring(item.indexOf("[") + 1, item.indexOf("]"));
         lycArray.push({
             t: (t.split(":")[0] * 60 + parseFloat(t.split(":")[1])).toFixed(3),
             c: item.substring(item.indexOf("]") + 1, item.length)
         });
     });
+    console.log(lycArray);
 }
 
-//歌词的JSON字符串转成数组
+//歌词的JSON字符串转成数组并处理传过来的数值
 function jsonToArray(json) {
     arrMusic = new Array();
     if (json == null && json.toString() == '') {
@@ -45,9 +48,9 @@ function jsonToArray(json) {
     attrMusic(arrMusic[nowPlayNum]);
     arrMusicNum = arrMusic.length;
 }
-jsonToArray(musicJson);
+jsonToArray(musicJson);//执行
 
-//进度条的变化
+//进度滑动条的变化
 setInterval(function() {
     for (i = 0; i < lycArray.length; i++) {
         if (parseInt(lycArray[i].t) <= parseInt(currentTime + 0.1) && parseInt(lycArray[i + 1].t) >= parseInt(currentTime + 0.1)) {
@@ -56,7 +59,7 @@ setInterval(function() {
     }
 },1000);
 
-//audio标签事件与背景图,换取进度条时间
+//audio标签事件监听进度条时间变化与背景图切换
 musicfc.ontimeupdate = function() {
     if (lycArray.length > 0) {
         if (currentnum == lycArray.length - 1 && musicfc.currentTime.toFixed(3) >= parseFloat(lycArray[currentnum].t)) {
@@ -77,32 +80,32 @@ musicfc.ontimeupdate = function() {
         $('#PlayProgress').val(PlayProgress);
         $('#PlayProgress').css("background-size", PlayProgress + "% 100%");
     }
-    //进度条时间控制
-    function shijian(offset)
-    {
-        var miao=(offset%60).toFixed(0);
-        var minute=parseInt(offset/60)%60;
-        var hour=parseInt(minute/60)%24;
-        var date=parseInt(hour/24);
-        var str = bushu(minute)+":"+bushu(miao);
-        return str;
-    }
-    //自定义补0函数
-    function bushu(num)
-    {
-        if (num < 10)
-        {
-            num="0"+num;
-        }
-        return num;
-    }
-    //console.log(currentTime,allTime);
+    console.log(currentTime,allTime);
     $(".timer_left").html("");
     $(".timer_left").html(shijian(currentTime));
     $(".timer_right").html("");
     $(".timer_right").html(shijian(allTime));
-
 };
+
+//进度条时间控制
+function shijian(offset)
+{
+    var miao=(offset%60).toFixed(0);
+    var minute=parseInt(offset/60)%60;
+    var hour=parseInt(minute/60)%24;
+    var date=parseInt(hour/24);
+    var str = bushu(minute)+":"+bushu(miao);
+    return str;
+}
+//自定义补0函数
+function bushu(num)
+{
+    if (num < 10)
+    {
+        num="0"+num;
+    }
+    return num;
+}
 
 var timer;
 var val = 0;
@@ -111,17 +114,18 @@ function autoPlay() {
     playStatus = 1;
     musicfc.play();
     $(".play").attr("class", 'fa fa-stop-circle play');
-     $('#round_icon').addClass('play-tx2');
-    // $(".play")[0].timer = setInterval(function ()
-    // {
-    //     val+=0.2;
-    //     if (val >= 360)
-    //     {
-    //         val=0;
-    //     }
-    //     $("#round_icon").rotate(val);
-    //     //console.log(val);
-    // },15)
+    //$('#round_icon').addClass('play-tx2');
+     clearInterval(timer);
+    timer = setInterval(function ()
+    {
+        val+=0.2;
+        if (val >= 360)
+        {
+            val=0;
+        }
+        $("#round_icon").rotate(val);
+        //console.log(val);
+    },15)
 }
 
 //点击停止时停止播放,状态为0
@@ -129,39 +133,10 @@ function stopPlay() {
     playStatus = 0;
     musicfc.pause();
     $(".play").attr("class", 'fa fa-play-circle play');
-    $('#round_icon').removeClass('play-tx2');
+    //$('#round_icon').removeClass('play-tx2');
     //clearInterval($(".play")[0].timer);
+    clearInterval(timer);
 }
-
-//点击播放/停止按钮判断状态函数
-$('.play').click(function() {
-    if (playStatus == 0) {
-        autoPlay();
-    } else {
-        stopPlay();
-    }
-});
-
-//点击左按钮切换
-$('.play-left').click(function() {
-    prevMusic();
-    if (playStatus == 1)
-    {
-        autoPlay();
-    }
-    //clearInterval(timer);
-    //clearInterval($(".play")[0].timer);
-});
-
-//点击右按钮切换
-$('.play-right').click(function() {
-    nextMusic();
-    if (playStatus == 1) {
-        autoPlay();
-    }
-    //clearInterval(timer);
-    //clearInterval($(".play")[0].timer);
-});
 
 //播放器的src路径切换
 function attrMusic(arr) {
@@ -184,10 +159,8 @@ function prevMusic() {
     }
     attrMusic(arrMusic[nowPlayNum]);
     render_head();
-
 }
 console.log(arrMusic[0]);
-
 
 
 //点击下一个音乐
@@ -197,7 +170,7 @@ function nextMusic() {
         nowPlayNum = 0;
     }
     attrMusic(arrMusic[nowPlayNum]);
-    render_head()
+    render_head();
 }
 
 
@@ -217,7 +190,77 @@ function render_head()
     $(".song_head").html(str);
 }
 
-//点击右上角判断是否有Cookie
+//点击播放/停止按钮判断状态函数
+$('.play').click(function() {
+    if (playStatus == 0) {
+        autoPlay();
+    } else {
+        stopPlay();
+    }
+});
+
+//点击左按钮切换
+$('.play-left').click(function() {
+    var val=0;
+    prevMusic();
+    if (playStatus == 1)
+    {
+        autoPlay();
+    }
+    //clearInterval(timer);
+    //clearInterval($(".play")[0].timer);
+});
+
+//点击右按钮切换
+$('.play-right').click(function() {
+    var val=0;
+    nextMusic();
+    if (playStatus == 1) {
+        autoPlay();
+    }
+    //clearInterval(timer);
+    //clearInterval($(".play")[0].timer);
+});
+
+//音量控制 拉动滑块时触发事件
+$("#play_volume").on("input",function ()
+{
+    //val不设置时默认为0.5  volume设置为0-1
+    $("audio")[0].volume=this.value;
+    console.log(this.value)
+})
+
+//点击右上角的详情下载歌曲
+$(".head_3").on("click",function ()
+{
+    $(".detail_more").animate({height:100},600);
+    $(".detail_more p").css({display:"block"});
+    //$(".detail_more").toggleClass(".alive");
+})
+console.log($("p").filter(".p1"));
+console.log($(".head_3").has("a"));
+console.log($("p").has(".span1"));
+
+//遍历body隐藏"detail_more"
+$("body").on("click",function (e)
+{
+    var cls=$(e.target).attr("class");//js对象
+    var cls_confirm=$("[class='iconfont icon-icon_account detail']")[0].className;//js对象
+    //console.log(cls,cls_confirm);
+    if (cls != cls_confirm && cls != "px")
+    {
+        $(".detail_more").animate({height:0},600);
+        $(".detail_more p").css({display:"none"});
+    }
+})
+
+$(".head_3").on("click","p",function ()
+{
+    $(".head_3 p").not($(this)).css({backgroundColor: "#7489a5"});
+    $(this).css({backgroundColor:"orange"});
+})
+
+//点击右下角判断是否有Cookie
 $(".back").on("click",function ()
 {
     console.log(666);
@@ -233,6 +276,7 @@ $(".back").on("click",function ()
     }
 })
 
+//监听切换暂停开始按钮
 musicfc.addEventListener('ended', function() {
     if (playStatus == 1) {
         if (onlyLoop == 0) {
@@ -281,6 +325,7 @@ function timeChange(time) {
     return allTimes;
 }
 
+//重构scale的原型对象的方法
 var dsq;
 var scale = function(btn, bar) {
     this.btn = document.getElementById(btn);
